@@ -13,6 +13,12 @@ scene:activate()
 
 step = 1
 mapDec = {}
+local points = {0, 0, 0, 0, 0, 0, 0}
+local categories = {"Amour", "Education", "Chance", "Santé", "Argent", "Illégalité", "Apparence"}
+
+local first_display
+local second_display
+local answer = 0
 
 love.graphics.setDefaultFilter('nearest', 'nearest')
 
@@ -41,6 +47,10 @@ local element = elementCreator({text = 'roll dice'}, 100, 100)
 element:draw(100, 100)
 local source
 
+function get_question()
+
+end
+
 function love.load()
     dicesource = love.audio.newSource("Sounds/DiceSource.mp3", "stream")
 
@@ -52,10 +62,7 @@ function love.load()
 
     mapDec = json.decode(mapJson)
 
-    for i, texture in ipairs(mapDec.categories) do
-    		print(texture.name)
-    		print("---")
-    	end
+    print(categories[1])
 
 end
 
@@ -76,7 +83,6 @@ function love.keyboard.wasPressed(key)
 end
 
 function love.update(dt)
-    -- change some values based on your actions
     scene:update(dt)
     love.keyboard.keysPressed = {}
 end
