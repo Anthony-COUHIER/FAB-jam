@@ -53,6 +53,7 @@ end
 
 function love.load()
     dicesource = love.audio.newSource("Sounds/DiceSource.mp3", "stream")
+    bgm = love.audio.newSource("Sounds/bgm.mp3", "stream")
 
     love.window.setTitle('FAB')
 
@@ -85,6 +86,9 @@ end
 function love.update(dt)
     scene:update(dt)
     love.keyboard.keysPressed = {}
+    if not bgm:isPlaying() then
+        love.audio.play(bgm)
+    end
 end
 
 function love.draw()
