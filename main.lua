@@ -1,13 +1,20 @@
---[[
-    Your love2d game start here
-]]
 
 local json = require("dkjson")
 
 step = 1
 mapDec = {}
+local points = {0, 0, 0, 0, 0, 0, 0}
+local categories = {"Amour", "Education", "Chance", "Santé", "Argent", "Illégalité", "Apparence"}
+
+local first_display
+local second_display
+local answer = 0
 
 love.graphics.setDefaultFilter('nearest', 'nearest')
+
+function get_question()
+
+end
 
 function love.load()
     love.window.setTitle('FAB')
@@ -18,10 +25,7 @@ function love.load()
 
     mapDec = json.decode(mapJson)
 
-    for i, texture in ipairs(mapDec.categories) do
-    		print(texture.name)
-    		print("---")
-    	end
+    print(categories[1])
 
 end
 
@@ -48,10 +52,6 @@ function love.update(dt)
 end
 
 function love.draw()
-    if step == 0 then
-        love.graphics.print('Welcome to the Love2d world!', 10, 10)
-    else
-        love.graphics.print('1', 10, 10)
-    end
+
 end
 
