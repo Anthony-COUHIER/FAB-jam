@@ -4,9 +4,9 @@
 	{
 		"file": "ls.png",
 		"mnemonic": "grass"
-	}, 	
+	},
 	{
-		"file": "rd.png",
+		"file": "road_xing.png",
 		"mnemonic": "road"
 	},
 	{
@@ -30,7 +30,7 @@
 		"mnemonic":"water"
 	}
 ],
-	
+
 "props":
 [
 	{
@@ -39,30 +39,48 @@
 		"origin" : "72|245"
 	},
 	{
+		"file": "question_mark.png",
+		"mnemonic": "qm",
+		"origin" : "50|80"
+	},
+	{
 		"file":"praca.png",
 		"mnemonic":"post",
 		"origin":"15|65"
+	},
+	{
+		"file":"case.png",
+		"mnemonic":"case",
+		"origin":"0|0"
 	}
 ],
-  
+
 "data":
-[     
-	[["water"],["water"],["water"],["water"],["water"],["water"],["water"],["water"],["water"],["water"],["water"],["water"],["water"],["water"],["water"]]
-	[["grass", "tree"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass", "tree"],["grass"],["grass"],["grass"],["grass"]]
-	[["grass"],["grass", "tree"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"]]
-	[["grass"],["grass"],["roadD"],["road"], ["road"], ["road"], ["road"], ["road"], ["road"], ["road"], ["road"], ["roadR"],["grass"],["grass"],["grass"]]
-	[["grass"],["grass"],["roadV"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass", "post"],["grass"],["roadV"],["grass"],["grass", "tree"],["grass"]]
-	[["grass"],["grass"],["roadV"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["roadV"],["grass"],["grass"],["grass"]]
-	[["grass"],["grass"],["roadV"],["grass"],["grass"],["grass", "tree"],["grass"],["grass"],["grass"],["grass"],["grass"],["roadV"],["grass"],["grass"],["grass", "tree"]]
-	[["grass"],["grass"],["roadV"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass", "tree"],["grass"],["grass"],["roadV"],["grass"],["grass"],["grass"]]
-	[["grass"],["grass"],["roadV"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["roadV"],["grass"],["grass"],["grass"]]
-	[["grass", "tree"],["grass"],["roadV"],["grass", "tree"],["grass"],["grass"],["grass"],["grass", "tree"],["grass"],["grass"],["grass"],["roadV"],["grass"],["grass", "tree"],["grass"]]
-	[["grass"],["grass"],["roadV"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["roadV"],["grass"],["grass"],["grass"]]
-	[["grass"],["grass"],["roadV"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass", "tree"],["grass"],["roadV"],["grass"],["grass"],["grass"]]
-	[["grass"],["grass"],["roadV"],["grass"],["grass"],["grass", "tree"],["grass"],["grass"],["grass"],["grass"],["grass"],["roadV"],["grass"],["grass"],["grass"]]
-	[["grass", "tree"],["grass"],["roadV"],["grass"],["grass"],["grass"],["grass"],["grass", "tree"],["grass"],["grass"],["grass"],["roadV"],["grass"],["grass"],["grass"]]
-	[["grass"],["grass"],["roadV"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["roadV"],["grass"],["grass"],["grass", "tree"]]
-	[["grass"],["grass"],["roadV"],["grass", "tree"],["grass"],["grass"],["grass"],["grass", "tree"],["grass"],["grass"],["grass"],["roadV"],["grass"],["grass", "tree"],["grass"]]
+[
+	[["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"], ["grass"],["grass"]],
+	[["grass"],["road", "case"],["road", "case"],["road", "qm"],["road"],["road", "case"],["road"],["road", "case"],["road", "qm"],["road", "case"],["road", "case"],["road", "case", "post"],["road", "case"],["road"],["road", "case"],["road", "qm"], ["road", "case"],["grass"]],
+	[["grass"],["grass"],["road"],["grass"],["grass"],["road"],["grass"],["road"],["grass"],["road"],["grass"],["grass", "grass"],["road"],["grass"],["road"],["grass"], ["road", "qm"],["grass"]],
+	[["grass"],["grass"],["road", "case"],["road", "case", "qm"],["road", "case"],["road", "case"],["grass"],["road", "case"],["road", "case"],["road", "case"],["grass"],["grass"],["road", "case"],["road"],["road"],["road", "grass"], ["road", "case"],["grass"]],
+	[["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass", "grass"],["grass"],["grass"],["grass"],["grass"], ["road", "qm"],["grass"]],
+	[["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"], ["road", "case"],["grass"]]
+
+
+
+
+	[["grass"],["road", "case"],["road"],["road"],["road", "case"],["road", "qm"],["road", "case"],["road"],["road", "case"],["road", "case"],["road", "qm"],["road", "case"],["road", "post"],["road", "case"],["road"],["road", "case"], ["road", "qm"],["grass"]],
+	[["grass"],["road"],["grass"],["grass"],["road"],["grass"],["road"],["grass"],["road"],["grass"],["grass"],["grass", "grass"],["grass"],["road"],["grass"],["road"], ["grass"],["grass"]],
+	[["grass"],["road", "case"],["road", "case"],["road", "case"],["road", "case"],["grass"],["road", "case"],["road"],["road", "case"],["grass"],["grass"],["grass"],["grass"],["road"],["road"],["road", "case"], ["grass"],["grass"]],
+	[["grass"],["road", "qm"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass", "grass"],["grass"],["grass"],["grass"],["grass"], ["grass"],["grass"]],
+	[["grass"],["road", "qm"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"], ["grass"],["grass"]]
+
+  	[["grass"],["road", "case"],["road"],["road"],["road"],["road"],["road", "case"],["road", "qm"],["road", "qm"],["road", "qm"],["road", "qm"],["road", "qm"],["road", "qm"],["road", "case"],["road"],["road"], ["road", "case"],["grass"],],
+	[["grass"],["road"],["grass"],["grass"],["grass"],["grass"],["road"],["grass"],["grass"],["grass"],["grass"],["grass", "grass"],["grass"],["road"],["grass"],["grass"], ["road"],["grass"]],
+	[["grass"],["road", "case"],["road", "qm"],["road", "case"],["road", "qm"],["road", "case"],["road", "qm"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["road", "case"],["road"],["road"], ["road", "case"],["grass"]],
+	[["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass", "grass"],["grass"],["grass"],["grass"],["grass"], ["road", "case"],["grass"]],
+	[["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"], ["road", "qm"],["grass"]]
+
+	[["grass"],["road", "case"],["road", "case"],["road", "case"],["road", "case"],["road", "case"],["road", "qm"],["road", "qm"],["road", "qm"],["road", "qm"],["road", "qm"],["road", "qm"],["road", "qm"],["road", "qm"],["road", "qm"],["road", "qm"], ["road"],["grass"],],
+	[["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass"],["grass", "grass"],["grass"],["grass"],["grass"],["grass"], ["grass"],["grass"]],
 ],
 
 "general":
