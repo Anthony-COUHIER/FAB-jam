@@ -1,0 +1,48 @@
+{
+  "categories":
+      [
+        {
+          "name": "Amour"
+        },
+        {
+          "name": "Education"
+        },
+        {
+          "name": "Chance"
+        },
+        {
+          "name": "Santé"
+        },
+        {
+          "name": "Argent"
+        },
+        {
+          "name": "Illégalité"
+        },
+        {
+          "name": "Apparence"
+        }
+  ],
+  "questions": [
+    {
+      "1": {
+        "display": "Text",
+        "first": {
+          "Santé": 1
+        },
+        "second": {
+          "Santé": -1
+        }
+      },
+      "2": {
+        "display": "Text",
+        "first": {
+          "Santé": 1
+        },
+        "second": {
+          "Santé": -1
+        }
+      }
+    }
+  ]
+}
