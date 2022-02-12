@@ -51,7 +51,6 @@ function get_question()
 end
 
 function love.load()
-    source = love.audio.newSource("rooftoprun.ogg", "stream")
 
     love.window.setTitle('FAB')
 
@@ -82,12 +81,8 @@ function love.keyboard.wasPressed(key)
 end
 
 function love.update(dt)
-    -- change some values based on your actions
     scene:update(dt)
     love.keyboard.keysPressed = {}
-    if not source:isPlaying( ) then
-        love.audio.play( source )
-    end
 end
 
 function love.draw()
