@@ -29,6 +29,7 @@ local elementCreator = helium(function(param, view)
 			love.graphics.setColor(1, 0, 0)
             d1 = Dice.roll()
             d2 = Dice.roll()
+            love.audio.play(dicesource)
 		else
 			love.graphics.setColor(0, 1, 1)
 		end
@@ -41,7 +42,7 @@ element:draw(100, 100)
 local source
 
 function love.load()
-    source = love.audio.newSource("rooftoprun.ogg", "stream")
+    dicesource = love.audio.newSource("Sounds/DiceSource.mp3", "stream")
 
     love.window.setTitle('FAB')
 
@@ -78,9 +79,6 @@ function love.update(dt)
     -- change some values based on your actions
     scene:update(dt)
     love.keyboard.keysPressed = {}
-    if not source:isPlaying( ) then
-        love.audio.play( source )
-    end
 end
 
 function love.draw()
