@@ -25,6 +25,7 @@ def main():
     # sucess_s = pygame.mixer.Sound(sucess_sound)
 
     pygame.mixer.music.load(music)
+    pygame.mixer.music.set_volume(0.1)
     pygame.mixer.music.play(-1)
 
     FONT = pygame.font.Font("resources/FreeSansBold.ttf", 50)
