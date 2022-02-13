@@ -1,4 +1,5 @@
 from common import Skills
+from Player import Player
 
 
 class Property:
@@ -8,6 +9,7 @@ class Property:
     id: int = 0
     mystery: bool = False
     name: str = ""
+    owner: Player = None
 
     path: str = ""
     x: int = 0
@@ -29,3 +31,7 @@ class Property:
 
     def __index__(self):
         return self.id
+
+    def buy(self, new_owner):
+        self.owner = new_owner
+        self.buyed = True
