@@ -118,8 +118,8 @@ def main():
         parallaxe(screen, die[number - 1], (1800 / 2) - 80, (1080 / 2) - 40)
 
         for i in range(4):
-            parallaxe(screen, my_game.players[i].image, my_game.players[i].x + x_offset,
-                      my_game.players[i].y + y_offset)
+            parallaxe(screen, my_game.players[i].image, my_game.players[i].x + x_offset + 10 * (i - 2),
+                      my_game.players[i].y + y_offset + 10 * (i - 2))
 
         pygame.display.flip()
 
