@@ -1,10 +1,10 @@
 #!/usr/bin/env python3.9
 
 from random import randrange
+from Game import Game
 import sys
 import pygame
 
-import Game
 
 music = 'Sounds/bgm.mp3'
 dice_sound = 'Sounds/DiceSource.mp3'
@@ -16,7 +16,9 @@ WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 GRAY = (30, 30, 30)
 
-my_game = Game
+my_game = Game()
+
+texturing = []
 
 
 def main():
@@ -59,6 +61,11 @@ def main():
 
     pygame.display.set_caption('FAB''s the game')
 
+    for i in my_game.board.tiles:
+        print(i)
+        if i.path == "grass":
+            texturing.append(pygame.image.load('resources/Tiles/grass_center_E.png'))
+
     while 1:
         for event in pygame.event.get():
             if event.type == pygame.QUIT: sys.exit()
@@ -85,6 +92,10 @@ def main():
         # screen.blit(text_surf, text_rect)
         pygame.display.update()
         parallaxe(screen, background, background_pos_x, background_pos_y)
+
+        for i in range(len(texturing)):
+            print(i)
+            parallaxe(screen, texturing[i], my_game.board.tiles[i].x, my_game.board.tiles[i].y)
         parallaxe(screen, die[number - 1], 400, 400)
         pygame.display.flip()
 

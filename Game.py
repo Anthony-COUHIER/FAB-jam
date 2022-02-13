@@ -4,14 +4,17 @@ from Property import Property
 
 
 class Game:
-    players: [Player]
-    board: Board
-    player_pos_to_play: int
+    players: [Player] = []
+    board: Board = None
+    player_pos_to_play: int = 0
 
-    def __init__(self, nbn_players):
-        self.players = [Player() for _ in range(nbn_players)]
+    def __init__(self):
+        self.players = []
         self.board = Board()
         self.player_pos_to_play = 0
+
+    def create_players(self, nb):
+        self.players = [Player() for _ in range(nb)]
 
     def get_tiles(self) -> Property:
         self.player_pos_to_play %= len(self.board.tiles)

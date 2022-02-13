@@ -2,16 +2,16 @@ from common import Skills
 
 
 class Property:
-    buy: Skills
-    cost: Skills
-    buyed: bool
-    id: int
-    mystery: bool
-    name: str
+    buy: Skills = None
+    cost: Skills = None
+    buyed: bool = False
+    id: int = 0
+    mystery: bool = False
+    name: str = ""
 
-    path: str
-    x: int
-    y: int
+    path: str = ""
+    x: int = 0
+    y: int = 0
 
     def __init__(self, cost: Skills, buy: Skills, id: int, name: str, path: str, x: int, y: int, mystery=False):
         self.cost = cost

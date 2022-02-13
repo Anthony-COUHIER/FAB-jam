@@ -3,9 +3,9 @@ from common import Skills
 
 
 class Player:
-    skills: Skills
-    case: int
-    properties: [Property]
+    skills: Skills = None
+    case: int = None
+    properties: [Property] = []
 
     def __init__(self):
         self.skills = Skills(5, 5, 5, 5, 10000, 0)
