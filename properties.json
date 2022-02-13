@@ -506,7 +506,7 @@
   {
     "name": "",
     "texture": {
-      "path": "corner1",
+      "path": "grass",
       "x": 390,
       "y": -100
     },
@@ -746,7 +746,7 @@
   {
     "name": "",
     "texture": {
-      "path": "corner1",
+      "path": "grass",
       "x": 280,
       "y": -50
     },
@@ -1250,7 +1250,7 @@
   {
     "name": "",
     "texture": {
-      "path": "grass",
+      "path": "corner1",
       "x": 720,
       "y": 50
     },
@@ -1442,7 +1442,7 @@
   {
     "name": "",
     "texture": {
-      "path": "grass",
+      "path": "corner1",
       "x": 610,
       "y": 100
     },
@@ -1466,7 +1466,7 @@
   {
     "name": "",
     "texture": {
-      "path": "grass",
+      "path": "corner1",
       "x": 830,
       "y": 100
     },
@@ -1682,7 +1682,7 @@
   {
     "name": "",
     "texture": {
-      "path": "grass",
+      "path": "corner1",
       "x": 500,
       "y": 150
     },
@@ -1730,7 +1730,7 @@
   {
     "name": "",
     "texture": {
-      "path": "grass",
+      "path": "corner1",
       "x": 940,
       "y": 150
     },
@@ -1874,7 +1874,7 @@
   {
     "name": "",
     "texture": {
-      "path": "grass",
+      "path": "corner1",
       "x": 390,
       "y": 200
     },
@@ -1946,7 +1946,7 @@
   {
     "name": "",
     "texture": {
-      "path": "grass",
+      "path": "corner1",
       "x": 1050,
       "y": 200
     },
@@ -2114,7 +2114,7 @@
   {
     "name": "",
     "texture": {
-      "path": "grass",
+      "path": "corner1",
       "x": 280,
       "y": 250
     },
@@ -2210,7 +2210,7 @@
   {
     "name": "",
     "texture": {
-      "path": "grass",
+      "path": "corner1",
       "x": 1160,
       "y": 250
     },
@@ -2306,7 +2306,7 @@
   {
     "name": "",
     "texture": {
-      "path": "grass",
+      "path": "corner1",
       "x": 170,
       "y": 300
     },
@@ -2426,463 +2426,7 @@
   {
     "name": "",
     "texture": {
-      "path": "grass",
-      "x": 1270,
-      "y": 300
-    },
-    "buy": {
-      "love": 0,
-      "education": 0,
-      "luck": 0,
-      "health": 0,
-      "money": 0,
-      "illegal": 0
-    },
-    "cost": {
-      "love": 0,
-      "education": 0,
-      "luck": 0,
-      "health": 0,
-      "money": 0,
-      "illegal": 0
-    }
-  },
-  {
-    "name": "",
-    "texture": {
-      "path": "grass",
-      "x": 1490,
-      "y": 300
-    },
-    "buy": {
-      "love": 0,
-      "education": 0,
-      "luck": 0,
-      "health": 0,
-      "money": 0,
-      "illegal": 0
-    },
-    "cost": {
-      "love": 0,
-      "education": 0,
-      "luck": 0,
-      "health": 0,
-      "money": 0,
-      "illegal": 0
-    }
-  },
-  {
-    "name": "",
-    "texture": {
-      "path": "grass",
-      "x": 1710,
-      "y": 300
-    },
-    "buy": {
-      "love": 0,
-      "education": 0,
-      "luck": 0,
-      "health": 0,
-      "money": 0,
-      "illegal": 0
-    },
-    "cost": {
-      "love": 0,
-      "education": 0,
-      "luck": 0,
-      "health": 0,
-      "money": 0,
-      "illegal": 0
-    }
-  },
-  {
-    "name": "",
-    "texture": {
-      "path": "grass",
-      "x": 1930,
-      "y": 300
-    },
-    "buy": {
-      "love": 0,
-      "education": 0,
-      "luck": 0,
-      "health": 0,
-      "money": 0,
-      "illegal": 0
-    },
-    "cost": {
-      "love": 0,
-      "education": 0,
-      "luck": 0,
-      "health": 0,
-      "money": 0,
-      "illegal": 0
-    }
-  },
-  {
-    "name": "",
-    "texture": {
-      "path": "grass",
-      "x": -160,
-      "y": 350
-    },
-    "buy": {
-      "love": 0,
-      "education": 0,
-      "luck": 0,
-      "health": 0,
-      "money": 0,
-      "illegal": 0
-    },
-    "cost": {
-      "love": 0,
-      "education": 0,
-      "luck": 0,
-      "health": 0,
-      "money": 0,
-      "illegal": 0
-    }
-  },
-  {
-    "name": "",
-    "texture": {
-      "path": "grass",
-      "x": 60,
-      "y": 350
-    },
-    "buy": {
-      "love": 0,
-      "education": 0,
-      "luck": 0,
-      "health": 0,
-      "money": 0,
-      "illegal": 0
-    },
-    "cost": {
-      "love": 0,
-      "education": 0,
-      "luck": 0,
-      "health": 0,
-      "money": 0,
-      "illegal": 0
-    }
-  },
-  {
-    "name": "",
-    "texture": {
-      "path": "grass",
-      "x": 280,
-      "y": 350
-    },
-    "buy": {
-      "love": 0,
-      "education": 0,
-      "luck": 0,
-      "health": 0,
-      "money": 0,
-      "illegal": 0
-    },
-    "cost": {
-      "love": 0,
-      "education": 0,
-      "luck": 0,
-      "health": 0,
-      "money": 0,
-      "illegal": 0
-    }
-  },
-  {
-    "name": "",
-    "texture": {
-      "path": "grass",
-      "x": 500,
-      "y": 350
-    },
-    "buy": {
-      "love": 0,
-      "education": 0,
-      "luck": 0,
-      "health": 0,
-      "money": 0,
-      "illegal": 0
-    },
-    "cost": {
-      "love": 0,
-      "education": 0,
-      "luck": 0,
-      "health": 0,
-      "money": 0,
-      "illegal": 0
-    }
-  },
-  {
-    "name": "",
-    "texture": {
-      "path": "grass",
-      "x": 720,
-      "y": 350
-    },
-    "buy": {
-      "love": 0,
-      "education": 0,
-      "luck": 0,
-      "health": 0,
-      "money": 0,
-      "illegal": 0
-    },
-    "cost": {
-      "love": 0,
-      "education": 0,
-      "luck": 0,
-      "health": 0,
-      "money": 0,
-      "illegal": 0
-    }
-  },
-  {
-    "name": "",
-    "texture": {
-      "path": "grass",
-      "x": 940,
-      "y": 350
-    },
-    "buy": {
-      "love": 0,
-      "education": 0,
-      "luck": 0,
-      "health": 0,
-      "money": 0,
-      "illegal": 0
-    },
-    "cost": {
-      "love": 0,
-      "education": 0,
-      "luck": 0,
-      "health": 0,
-      "money": 0,
-      "illegal": 0
-    }
-  },
-  {
-    "name": "",
-    "texture": {
-      "path": "grass",
-      "x": 1160,
-      "y": 350
-    },
-    "buy": {
-      "love": 0,
-      "education": 0,
-      "luck": 0,
-      "health": 0,
-      "money": 0,
-      "illegal": 0
-    },
-    "cost": {
-      "love": 0,
-      "education": 0,
-      "luck": 0,
-      "health": 0,
-      "money": 0,
-      "illegal": 0
-    }
-  },
-  {
-    "name": "",
-    "texture": {
-      "path": "grass",
-      "x": 1380,
-      "y": 350
-    },
-    "buy": {
-      "love": 0,
-      "education": 0,
-      "luck": 0,
-      "health": 0,
-      "money": 0,
-      "illegal": 0
-    },
-    "cost": {
-      "love": 0,
-      "education": 0,
-      "luck": 0,
-      "health": 0,
-      "money": 0,
-      "illegal": 0
-    }
-  },
-  {
-    "name": "",
-    "texture": {
-      "path": "grass",
-      "x": 1600,
-      "y": 350
-    },
-    "buy": {
-      "love": 0,
-      "education": 0,
-      "luck": 0,
-      "health": 0,
-      "money": 0,
-      "illegal": 0
-    },
-    "cost": {
-      "love": 0,
-      "education": 0,
-      "luck": 0,
-      "health": 0,
-      "money": 0,
-      "illegal": 0
-    }
-  },
-  {
-    "name": "",
-    "texture": {
-      "path": "grass",
-      "x": -50,
-      "y": 300
-    },
-    "buy": {
-      "love": 0,
-      "education": 0,
-      "luck": 0,
-      "health": 0,
-      "money": 0,
-      "illegal": 0
-    },
-    "cost": {
-      "love": 0,
-      "education": 0,
-      "luck": 0,
-      "health": 0,
-      "money": 0,
-      "illegal": 0
-    }
-  },
-  {
-    "name": "",
-    "texture": {
-      "path": "grass",
-      "x": 170,
-      "y": 300
-    },
-    "buy": {
-      "love": 0,
-      "education": 0,
-      "luck": 0,
-      "health": 0,
-      "money": 0,
-      "illegal": 0
-    },
-    "cost": {
-      "love": 0,
-      "education": 0,
-      "luck": 0,
-      "health": 0,
-      "money": 0,
-      "illegal": 0
-    }
-  },
-  {
-    "name": "",
-    "texture": {
-      "path": "grass",
-      "x": 390,
-      "y": 300
-    },
-    "buy": {
-      "love": 0,
-      "education": 0,
-      "luck": 0,
-      "health": 0,
-      "money": 0,
-      "illegal": 0
-    },
-    "cost": {
-      "love": 0,
-      "education": 0,
-      "luck": 0,
-      "health": 0,
-      "money": 0,
-      "illegal": 0
-    }
-  },
-  {
-    "name": "",
-    "texture": {
-      "path": "grass",
-      "x": 610,
-      "y": 300
-    },
-    "buy": {
-      "love": 0,
-      "education": 0,
-      "luck": 0,
-      "health": 0,
-      "money": 0,
-      "illegal": 0
-    },
-    "cost": {
-      "love": 0,
-      "education": 0,
-      "luck": 0,
-      "health": 0,
-      "money": 0,
-      "illegal": 0
-    }
-  },
-  {
-    "name": "",
-    "texture": {
-      "path": "grass",
-      "x": 830,
-      "y": 300
-    },
-    "buy": {
-      "love": 0,
-      "education": 0,
-      "luck": 0,
-      "health": 0,
-      "money": 0,
-      "illegal": 0
-    },
-    "cost": {
-      "love": 0,
-      "education": 0,
-      "luck": 0,
-      "health": 0,
-      "money": 0,
-      "illegal": 0
-    }
-  },
-  {
-    "name": "",
-    "texture": {
-      "path": "grass",
-      "x": 1050,
-      "y": 300
-    },
-    "buy": {
-      "love": 0,
-      "education": 0,
-      "luck": 0,
-      "health": 0,
-      "money": 0,
-      "illegal": 0
-    },
-    "cost": {
-      "love": 0,
-      "education": 0,
-      "luck": 0,
-      "health": 0,
-      "money": 0,
-      "illegal": 0
-    }
-  },
-  {
-    "name": "",
-    "texture": {
-      "path": "grass",
+      "path": "corner1",
       "x": 1270,
       "y": 300
     },
@@ -3146,7 +2690,463 @@
   {
     "name": "",
     "texture": {
+      "path": "corner1",
+      "x": 1380,
+      "y": 350
+    },
+    "buy": {
+      "love": 0,
+      "education": 0,
+      "luck": 0,
+      "health": 0,
+      "money": 0,
+      "illegal": 0
+    },
+    "cost": {
+      "love": 0,
+      "education": 0,
+      "luck": 0,
+      "health": 0,
+      "money": 0,
+      "illegal": 0
+    }
+  },
+  {
+    "name": "",
+    "texture": {
       "path": "grass",
+      "x": 1600,
+      "y": 350
+    },
+    "buy": {
+      "love": 0,
+      "education": 0,
+      "luck": 0,
+      "health": 0,
+      "money": 0,
+      "illegal": 0
+    },
+    "cost": {
+      "love": 0,
+      "education": 0,
+      "luck": 0,
+      "health": 0,
+      "money": 0,
+      "illegal": 0
+    }
+  },
+  {
+    "name": "",
+    "texture": {
+      "path": "grass",
+      "x": -50,
+      "y": 300
+    },
+    "buy": {
+      "love": 0,
+      "education": 0,
+      "luck": 0,
+      "health": 0,
+      "money": 0,
+      "illegal": 0
+    },
+    "cost": {
+      "love": 0,
+      "education": 0,
+      "luck": 0,
+      "health": 0,
+      "money": 0,
+      "illegal": 0
+    }
+  },
+  {
+    "name": "",
+    "texture": {
+      "path": "corner1",
+      "x": 170,
+      "y": 300
+    },
+    "buy": {
+      "love": 0,
+      "education": 0,
+      "luck": 0,
+      "health": 0,
+      "money": 0,
+      "illegal": 0
+    },
+    "cost": {
+      "love": 0,
+      "education": 0,
+      "luck": 0,
+      "health": 0,
+      "money": 0,
+      "illegal": 0
+    }
+  },
+  {
+    "name": "",
+    "texture": {
+      "path": "grass",
+      "x": 390,
+      "y": 300
+    },
+    "buy": {
+      "love": 0,
+      "education": 0,
+      "luck": 0,
+      "health": 0,
+      "money": 0,
+      "illegal": 0
+    },
+    "cost": {
+      "love": 0,
+      "education": 0,
+      "luck": 0,
+      "health": 0,
+      "money": 0,
+      "illegal": 0
+    }
+  },
+  {
+    "name": "",
+    "texture": {
+      "path": "grass",
+      "x": 610,
+      "y": 300
+    },
+    "buy": {
+      "love": 0,
+      "education": 0,
+      "luck": 0,
+      "health": 0,
+      "money": 0,
+      "illegal": 0
+    },
+    "cost": {
+      "love": 0,
+      "education": 0,
+      "luck": 0,
+      "health": 0,
+      "money": 0,
+      "illegal": 0
+    }
+  },
+  {
+    "name": "",
+    "texture": {
+      "path": "grass",
+      "x": 830,
+      "y": 300
+    },
+    "buy": {
+      "love": 0,
+      "education": 0,
+      "luck": 0,
+      "health": 0,
+      "money": 0,
+      "illegal": 0
+    },
+    "cost": {
+      "love": 0,
+      "education": 0,
+      "luck": 0,
+      "health": 0,
+      "money": 0,
+      "illegal": 0
+    }
+  },
+  {
+    "name": "",
+    "texture": {
+      "path": "grass",
+      "x": 1050,
+      "y": 300
+    },
+    "buy": {
+      "love": 0,
+      "education": 0,
+      "luck": 0,
+      "health": 0,
+      "money": 0,
+      "illegal": 0
+    },
+    "cost": {
+      "love": 0,
+      "education": 0,
+      "luck": 0,
+      "health": 0,
+      "money": 0,
+      "illegal": 0
+    }
+  },
+  {
+    "name": "",
+    "texture": {
+      "path": "corner1",
+      "x": 1270,
+      "y": 300
+    },
+    "buy": {
+      "love": 0,
+      "education": 0,
+      "luck": 0,
+      "health": 0,
+      "money": 0,
+      "illegal": 0
+    },
+    "cost": {
+      "love": 0,
+      "education": 0,
+      "luck": 0,
+      "health": 0,
+      "money": 0,
+      "illegal": 0
+    }
+  },
+  {
+    "name": "",
+    "texture": {
+      "path": "grass",
+      "x": 1490,
+      "y": 300
+    },
+    "buy": {
+      "love": 0,
+      "education": 0,
+      "luck": 0,
+      "health": 0,
+      "money": 0,
+      "illegal": 0
+    },
+    "cost": {
+      "love": 0,
+      "education": 0,
+      "luck": 0,
+      "health": 0,
+      "money": 0,
+      "illegal": 0
+    }
+  },
+  {
+    "name": "",
+    "texture": {
+      "path": "grass",
+      "x": 1710,
+      "y": 300
+    },
+    "buy": {
+      "love": 0,
+      "education": 0,
+      "luck": 0,
+      "health": 0,
+      "money": 0,
+      "illegal": 0
+    },
+    "cost": {
+      "love": 0,
+      "education": 0,
+      "luck": 0,
+      "health": 0,
+      "money": 0,
+      "illegal": 0
+    }
+  },
+  {
+    "name": "",
+    "texture": {
+      "path": "grass",
+      "x": 1930,
+      "y": 300
+    },
+    "buy": {
+      "love": 0,
+      "education": 0,
+      "luck": 0,
+      "health": 0,
+      "money": 0,
+      "illegal": 0
+    },
+    "cost": {
+      "love": 0,
+      "education": 0,
+      "luck": 0,
+      "health": 0,
+      "money": 0,
+      "illegal": 0
+    }
+  },
+  {
+    "name": "",
+    "texture": {
+      "path": "grass",
+      "x": -160,
+      "y": 350
+    },
+    "buy": {
+      "love": 0,
+      "education": 0,
+      "luck": 0,
+      "health": 0,
+      "money": 0,
+      "illegal": 0
+    },
+    "cost": {
+      "love": 0,
+      "education": 0,
+      "luck": 0,
+      "health": 0,
+      "money": 0,
+      "illegal": 0
+    }
+  },
+  {
+    "name": "",
+    "texture": {
+      "path": "corner1",
+      "x": 60,
+      "y": 350
+    },
+    "buy": {
+      "love": 0,
+      "education": 0,
+      "luck": 0,
+      "health": 0,
+      "money": 0,
+      "illegal": 0
+    },
+    "cost": {
+      "love": 0,
+      "education": 0,
+      "luck": 0,
+      "health": 0,
+      "money": 0,
+      "illegal": 0
+    }
+  },
+  {
+    "name": "",
+    "texture": {
+      "path": "grass",
+      "x": 280,
+      "y": 350
+    },
+    "buy": {
+      "love": 0,
+      "education": 0,
+      "luck": 0,
+      "health": 0,
+      "money": 0,
+      "illegal": 0
+    },
+    "cost": {
+      "love": 0,
+      "education": 0,
+      "luck": 0,
+      "health": 0,
+      "money": 0,
+      "illegal": 0
+    }
+  },
+  {
+    "name": "",
+    "texture": {
+      "path": "grass",
+      "x": 500,
+      "y": 350
+    },
+    "buy": {
+      "love": 0,
+      "education": 0,
+      "luck": 0,
+      "health": 0,
+      "money": 0,
+      "illegal": 0
+    },
+    "cost": {
+      "love": 0,
+      "education": 0,
+      "luck": 0,
+      "health": 0,
+      "money": 0,
+      "illegal": 0
+    }
+  },
+  {
+    "name": "",
+    "texture": {
+      "path": "grass",
+      "x": 720,
+      "y": 350
+    },
+    "buy": {
+      "love": 0,
+      "education": 0,
+      "luck": 0,
+      "health": 0,
+      "money": 0,
+      "illegal": 0
+    },
+    "cost": {
+      "love": 0,
+      "education": 0,
+      "luck": 0,
+      "health": 0,
+      "money": 0,
+      "illegal": 0
+    }
+  },
+  {
+    "name": "",
+    "texture": {
+      "path": "grass",
+      "x": 940,
+      "y": 350
+    },
+    "buy": {
+      "love": 0,
+      "education": 0,
+      "luck": 0,
+      "health": 0,
+      "money": 0,
+      "illegal": 0
+    },
+    "cost": {
+      "love": 0,
+      "education": 0,
+      "luck": 0,
+      "health": 0,
+      "money": 0,
+      "illegal": 0
+    }
+  },
+  {
+    "name": "",
+    "texture": {
+      "path": "grass",
+      "x": 1160,
+      "y": 350
+    },
+    "buy": {
+      "love": 0,
+      "education": 0,
+      "luck": 0,
+      "health": 0,
+      "money": 0,
+      "illegal": 0
+    },
+    "cost": {
+      "love": 0,
+      "education": 0,
+      "luck": 0,
+      "health": 0,
+      "money": 0,
+      "illegal": 0
+    }
+  },
+  {
+    "name": "",
+    "texture": {
+      "path": "corner1",
       "x": 1380,
       "y": 350
     },
@@ -3218,7 +3218,7 @@
   {
     "name": "",
     "texture": {
-      "path": "grass",
+      "path": "corner1",
       "x": 170,
       "y": 400
     },
@@ -3338,7 +3338,7 @@
   {
     "name": "",
     "texture": {
-      "path": "grass",
+      "path": "corner1",
       "x": 1270,
       "y": 400
     },
@@ -3482,7 +3482,7 @@
   {
     "name": "",
     "texture": {
-      "path": "grass",
+      "path": "corner1",
       "x": 280,
       "y": 450
     },
@@ -3578,7 +3578,7 @@
   {
     "name": "",
     "texture": {
-      "path": "grass",
+      "path": "corner1",
       "x": 1160,
       "y": 450
     },
@@ -3698,7 +3698,7 @@
   {
     "name": "",
     "texture": {
-      "path": "grass",
+      "path": "corner1",
       "x": 390,
       "y": 500
     },
@@ -3770,7 +3770,7 @@
   {
     "name": "",
     "texture": {
-      "path": "grass",
+      "path": "corner1",
       "x": 1050,
       "y": 500
     },
@@ -3962,7 +3962,7 @@
   {
     "name": "",
     "texture": {
-      "path": "grass",
+      "path": "corner1",
       "x": 500,
       "y": 550
     },
@@ -4010,7 +4010,7 @@
   {
     "name": "",
     "texture": {
-      "path": "grass",
+      "path": "corner1",
       "x": 940,
       "y": 550
     },
@@ -4178,7 +4178,7 @@
   {
     "name": "",
     "texture": {
-      "path": "grass",
+      "path": "corner1",
       "x": 610,
       "y": 600
     },
@@ -4202,7 +4202,7 @@
   {
     "name": "",
     "texture": {
-      "path": "grass",
+      "path": "corner1",
       "x": 830,
       "y": 600
     },
@@ -4442,7 +4442,7 @@
   {
     "name": "",
     "texture": {
-      "path": "grass",
+      "path": "corner1",
       "x": 720,
       "y": 650
     },
