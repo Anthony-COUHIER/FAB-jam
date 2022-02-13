@@ -25,6 +25,11 @@
   },
   {
     "name": "",
+    "texture": {
+      "path": "resources/Tiles/grass_center_E.png",
+      "x": 0,
+      "y": 0
+    },
     "buy": {
       "love": 0,
       "education": 0,
@@ -44,6 +49,11 @@
   },
   {
     "name": "",
+    "texture": {
+      "path": "resources/Tiles/grass_center_E.png",
+      "x": 0,
+      "y": 0
+    },
     "buy": {
       "love": 0,
       "education": 0,
@@ -63,6 +73,11 @@
   },
   {
     "name": "",
+    "texture": {
+      "path": "resources/Tiles/grass_center_E.png",
+      "x": 0,
+      "y": 0
+    },
     "buy": {
       "love": 0,
       "education": 0,

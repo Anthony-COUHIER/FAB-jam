@@ -9,12 +9,19 @@ class Property:
     mystery: bool
     name: str
 
-    def __init__(self, cost: Skills, buy: Skills, id: int, name: str, mystery=False):
+    path: str
+    x: int
+    y: int
+
+    def __init__(self, cost: Skills, buy: Skills, id: int, name: str, path: str, x: int, y: int, mystery=False):
         self.cost = cost
         self.buy = buy
         self.buyed = False
         self.id = id
         self.name = name
+        self.path = path
+        self.x = x
+        self.y = y
         self.mystery = mystery
 
     def go_on(self) -> bool:

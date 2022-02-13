@@ -9,10 +9,11 @@ dice_sound = 'Sounds/DiceSource.mp3'
 redbullcan_sound = 'Sounds/redbullcan_sound.mp3'
 sucess_sound = 'Sounds/sucess_sound.mp3'
 
-width, height = (200,300)
+width, height = (200, 300)
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 GRAY = (30, 30, 30)
+
 
 def main():
     global event
@@ -25,6 +26,7 @@ def main():
     # sucess_s = pygame.mixer.Sound(sucess_sound)
 
     pygame.mixer.music.load(music)
+    pygame.mixer.music.set_volume(0.1)
     pygame.mixer.music.play(-1)
 
     FONT = pygame.font.Font("resources/FreeSansBold.ttf", 50)
@@ -35,14 +37,14 @@ def main():
     screen = pygame.display.set_mode(size)
 
     background = pygame.image.load('resources/background.png')
-    die =   [
-            pygame.image.load('resources/PNG/Dice/dieWhite1.png'),
-            pygame.image.load('resources/PNG/Dice/dieWhite2.png'),
-            pygame.image.load('resources/PNG/Dice/dieWhite3.png'),
-            pygame.image.load('resources/PNG/Dice/dieWhite4.png'),
-            pygame.image.load('resources/PNG/Dice/dieWhite5.png'),
-            pygame.image.load('resources/PNG/Dice/dieWhite6.png')
-            ]
+    die = [
+        pygame.image.load('resources/PNG/Dice/dieWhite1.png'),
+        pygame.image.load('resources/PNG/Dice/dieWhite2.png'),
+        pygame.image.load('resources/PNG/Dice/dieWhite3.png'),
+        pygame.image.load('resources/PNG/Dice/dieWhite4.png'),
+        pygame.image.load('resources/PNG/Dice/dieWhite5.png'),
+        pygame.image.load('resources/PNG/Dice/dieWhite6.png')
+    ]
 
     background_pos_x = 0
     background_pos_y = 0
@@ -64,19 +66,12 @@ def main():
                 if background_pos_x < 0:
                     background_pos_x += 192
 
-            # Test sounds
-            if event.key == pygame.K_ESCAPE:
-                pygame.mixer.Sound.play(dice_roll_s)
-
-                        # This block is executed once for each MOUSEBUTTONDOWN event.
-        elif event.type == pygame.MOUSEBUTTONDOWN:
-            # 1 is the left mouse button, 2 is middle, 3 is right.
+        if event.type == pygame.MOUSEBUTTONDOWN:
             if event.button == 1:
-                # `event.pos` is the mouse position.
                 if button.collidepoint(event.pos):
-                    # Increment the number.
-                    if pressing == False:
+                    if not pressing:
                         number = randrange(1, 7)
+                        pygame.mixer.Sound.play(dice_roll_s)
                         pressing = True
         else:
             pressing = False
