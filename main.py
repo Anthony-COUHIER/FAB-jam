@@ -39,6 +39,7 @@ def main():
     clock = pygame.time.Clock()
 
     size = 1800, 1080
+    playerpos = 0
 
     screen = pygame.display.set_mode(size)
 
@@ -71,7 +72,7 @@ def main():
 
     pressing = False
     button = pygame.Rect(400, 400, 64, 64)
-    number = randrange(1, 7)
+    number = 1
 
     pygame.display.set_caption('FAB''s the game')
 
@@ -109,6 +110,7 @@ def main():
                         number = randrange(1, 7)
                         pygame.mixer.Sound.play(dice_roll_s)
                         pressing = True
+                        playerpos += number
         else:
             pressing = False
         # pygame.draw.rect(screen, GRAY, button)
@@ -123,8 +125,7 @@ def main():
             parallaxe(screen, texturing[i], my_game.board.tiles[i].x, my_game.board.tiles[i].y)
 
         parallaxe(screen, die[number - 1], 400, 400)
-        for p in pos:
-            parallaxe(screen, player[0], p[0] + x_offset, p[1] + y_offset)
+        parallaxe(screen, player[0], pos[playerpos][0] + x_offset, pos[playerpos][1] + y_offset)
 
         pygame.display.flip()
 
