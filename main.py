@@ -51,7 +51,12 @@ def main():
         pygame.image.load('resources/PNG/Dice/dieWhite5.png'),
         pygame.image.load('resources/PNG/Dice/dieWhite6.png')
     ]
-
+    player = [
+        pygame.image.load('resources/PNG/Pieces (Blue)/pieceBlue_single03.png'),
+        pygame.image.load('resources/PNG/Pieces (Red)/pieceRed_single03.png'),
+        pygame.image.load('resources/PNG/Pieces (Yellow)/pieceYellow_single03.png'),
+        pygame.image.load('resources/PNG/Pieces (Green)/pieceGreen_single03.png'),
+    ]
     background_pos_x = 0
     background_pos_y = 0
 
@@ -98,7 +103,7 @@ def main():
             parallaxe(screen, texturing[i], my_game.board.tiles[i].x, my_game.board.tiles[i].y)
         parallaxe(screen, die[number - 1], 400, 400)
         pygame.display.flip()
-
+        parallaxe(screen, player[0], 400, 100)
 
 def parallaxe(window, image, position_x, bg_position_y):
     window.blit(image, (position_x, bg_position_y))
