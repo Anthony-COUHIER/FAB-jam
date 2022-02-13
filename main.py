@@ -21,8 +21,8 @@ def main():
     pygame.mixer.init()
 
     dice_roll_s = pygame.mixer.Sound(dice_sound)
-    open_can_s = pygame.mixer.Sound(redbullcan_sound)
-    sucess_s = pygame.mixer.Sound(sucess_sound)
+    # open_can_s = pygame.mixer.Sound(redbullcan_sound)
+    # sucess_s = pygame.mixer.Sound(sucess_sound)
 
     pygame.mixer.music.load(music)
     pygame.mixer.music.play(-1)
@@ -63,6 +63,7 @@ def main():
             if event.key == pygame.K_LEFT:
                 if background_pos_x < 0:
                     background_pos_x += 192
+
                         # This block is executed once for each MOUSEBUTTONDOWN event.
         elif event.type == pygame.MOUSEBUTTONDOWN:
             # 1 is the left mouse button, 2 is middle, 3 is right.
