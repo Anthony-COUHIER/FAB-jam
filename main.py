@@ -32,6 +32,11 @@ def main():
                                "resources/PNG/Pieces (Green)/pieceGreen_single02.png"])
 
     dice_roll_s = pygame.mixer.Sound(dice_sound)
+
+    profiles = [pygame.image.load('resources/profil_blue.png'), pygame.image.load('resources/profil_red.png'),
+                pygame.image.load('resources/profil_green.png'), pygame.image.load('resources/profil_yellow.png')]
+    profiles_positions = [[0, 0], [1800 - 450, 0], [0, 1080 - 100], [1800 - 450, 1080 - 100]]
+
     # open_can_s = pygame.mixer.Sound(redbullcan_sound)
     # sucess_s = pygame.mixer.Sound(sucess_sound)
 
@@ -44,7 +49,7 @@ def main():
 
     size = 1800, 1080
 
-    screen = pygame.display.set_mode(size)
+    screen = pygame.display.set_mode(size, pygame.RESIZABLE)
 
     background = pygame.image.load('resources/background.png')
     die = [
@@ -120,6 +125,12 @@ def main():
         for i in range(4):
             parallaxe(screen, my_game.players[i].image, my_game.players[i].x + x_offset + 5 * (i - 2),
                       my_game.players[i].y + y_offset + 5 * (i - 2))
+
+        for i in range(4):
+
+            #TODO Alex ajoute ici les draw des texts pour les profils
+
+            parallaxe(screen, profiles[i], profiles_positions[i][0], profiles_positions[i][1])
 
         pygame.display.flip()
 
