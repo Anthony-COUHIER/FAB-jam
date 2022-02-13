@@ -1,4 +1,4 @@
-import Property
+from Property import Property
 import json
 
 
