@@ -5,7 +5,6 @@ from Game import Game
 import sys
 import pygame
 
-
 music = 'Sounds/bgm.mp3'
 dice_sound = 'Sounds/DiceSource.mp3'
 redbullcan_sound = 'Sounds/redbullcan_sound.mp3'
@@ -16,8 +15,6 @@ WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 GRAY = (30, 30, 30)
 
-my_game = Game()
-
 texturing = []
 
 
@@ -26,6 +23,13 @@ def main():
     pygame.init()
 
     pygame.mixer.init()
+
+    my_game = Game()
+
+    my_game.create_players(4, ["resources/PNG/Pieces (Blue)/pieceBlue_single03.png",
+                               "resources/PNG/Pieces (Red)/pieceRed_single03.png",
+                               "resources/PNG/Pieces (Yellow)/pieceYellow_single03.png",
+                               "resources/PNG/Pieces (Green)/pieceGreen_single03.png"])
 
     dice_roll_s = pygame.mixer.Sound(dice_sound)
     # open_can_s = pygame.mixer.Sound(redbullcan_sound)
@@ -39,7 +43,6 @@ def main():
     clock = pygame.time.Clock()
 
     size = 1800, 1080
-    playerpos = 0
 
     screen = pygame.display.set_mode(size)
 
@@ -52,26 +55,14 @@ def main():
         pygame.image.load('resources/PNG/Dice/dieWhite5.png'),
         pygame.image.load('resources/PNG/Dice/dieWhite6.png')
     ]
-    player = [
-        pygame.image.load('resources/PNG/Pieces (Blue)/pieceBlue_single03.png'),
-        pygame.image.load('resources/PNG/Pieces (Red)/pieceRed_single03.png'),
-        pygame.image.load('resources/PNG/Pieces (Yellow)/pieceYellow_single03.png'),
-        pygame.image.load('resources/PNG/Pieces (Green)/pieceGreen_single03.png'),
-    ]
     x_offset = 100
     y_offset = 150
-    pos = [
-        [720, 50], [830, 100], [940, 150], [1050, 200], [1160, 250], [1270, 300], [1380, 350],
-        [1270, 400], [1160, 450], [1050, 500], [940, 550], [830, 600], [720, 650],
-        [610, 600], [500, 550], [390, 500], [280, 450], [170, 400], [60, 350],
-        [170, 300], [280, 250], [390, 200], [500, 150], [610, 100]
-    ]
 
     background_pos_x = 0
     background_pos_y = 0
 
     pressing = False
-    button = pygame.Rect(400, 400, 64, 64)
+    button = pygame.Rect((1800 / 2) - 80, (1080 / 2) - 40, 64, 64)
     number = 1
 
     pygame.display.set_caption('FAB''s the game')
@@ -110,7 +101,7 @@ def main():
                         number = randrange(1, 7)
                         pygame.mixer.Sound.play(dice_roll_s)
                         pressing = True
-                        playerpos += number
+                        my_game.play(number)
         else:
             pressing = False
         # pygame.draw.rect(screen, GRAY, button)
@@ -124,8 +115,11 @@ def main():
         for i in range(len(texturing)):
             parallaxe(screen, texturing[i], my_game.board.tiles[i].x, my_game.board.tiles[i].y)
 
-        parallaxe(screen, die[number - 1], 400, 400)
-        parallaxe(screen, player[0], pos[playerpos][0] + x_offset, pos[playerpos][1] + y_offset)
+        parallaxe(screen, die[number - 1], (1800 / 2) - 80, (1080 / 2) - 40)
+
+        for i in range(4):
+            parallaxe(screen, my_game.players[i].image, my_game.players[i].x + x_offset,
+                      my_game.players[i].y + y_offset)
 
         pygame.display.flip()
 

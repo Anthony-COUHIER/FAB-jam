@@ -13,8 +13,8 @@ class Game:
         self.board = Board()
         self.player_pos_to_play = 0
 
-    def create_players(self, nb):
-        self.players = [Player() for _ in range(nb)]
+    def create_players(self, nb, paths):
+        self.players = [Player(paths[i]) for i in range(nb)]
 
     def get_tiles(self) -> Property:
         self.player_pos_to_play %= len(self.board.tiles)

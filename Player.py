@@ -1,3 +1,7 @@
+from time import sleep
+
+import pygame
+
 import Property
 from common import Skills
 
@@ -6,17 +10,36 @@ class Player:
     skills: Skills = None
     case: int = None
     properties: [Property] = []
+    pos = [
+        [720, 50], [830, 100], [940, 150], [1050, 200], [1160, 250], [1270, 300], [1380, 350],
+        [1270, 400], [1160, 450], [1050, 500], [940, 550], [830, 600], [720, 650],
+        [610, 600], [500, 550], [390, 500], [280, 450], [170, 400], [60, 350],
+        [170, 300], [280, 250], [390, 200], [500, 150], [610, 100]
+    ]
+    path: str = ""
+    image: pygame.image
 
-    def __init__(self):
+    @property
+    def x(self):
+        return self.pos[self.case][0]
+
+    @property
+    def y(self):
+        return self.pos[self.case][1]
+
+    def __init__(self, path):
         self.skills = Skills(5, 5, 5, 5, 10000, 0)
         self.case = 0
         self.properties = []
+        self.path = path
+        self.image = pygame.image.load(self.path)
 
     def move(self, nb_case):
         if nb_case > 0:
             self.case += 1
+            #sleep(1)
+            self.case %= 24
             self.move(nb_case - 1)
-            # sleep
 
     def can_buy(self, asset: Property) -> bool:
         return not (
