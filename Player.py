@@ -19,7 +19,14 @@ class Player:
             # sleep
 
     def can_buy(self, asset: Property) -> bool:
-        return not (self.skills.love < asset.buy.love and self.skills.health < asset.buy.health and self.skills.illegal < asset.buy.illegal and self.skills.education < asset.buy.education and self.skills.money < asset.buy.money and self.skills.luck < asset.buy.luck)
+        return not (
+                    self.skills.love < asset.buy.love and
+                    self.skills.health < asset.buy.health and
+                    self.skills.illegal < asset.buy.illegal and
+                    self.skills.education < asset.buy.education and
+                    self.skills.money < asset.buy.money and
+                    self.skills.luck < asset.buy.luck
+        )
 
     def buy(self, asset: Property):
         if self.can_buy(asset):
@@ -38,4 +45,3 @@ class Player:
         self.skills.education -= asset.cost.education
         self.skills.money -= asset.cost.money
         self.skills.luck -= asset.cost.luck
-

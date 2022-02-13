@@ -1,9 +1,28 @@
 [
   {
-    "name": "",
+    "name": "universite",
     "buy": {
       "love": 0,
       "education": 0,
+      "luck": 0,
+      "health": 0,
+      "money": 3000,
+      "illegal": 0
+    },
+    "cost": {
+      "love": 0,
+      "education": 2,
+      "luck": 0,
+      "health": 0,
+      "money": 0,
+      "illegal": 0
+    }
+  },
+  {
+    "name":  "alternance",
+    "buy": {
+      "love": 0,
+      "education": 1,
       "luck": 0,
       "health": 0,
       "money": 0,
@@ -11,6 +30,25 @@
     },
     "cost": {
       "love": 0,
+      "education": 1,
+      "luck": 0,
+      "health": 0,
+      "money": 1000,
+      "illegal": 0
+    }
+  },
+  {
+    "name":  "aller en boite",
+    "buy": {
+      "love": 0,
+      "education": 0,
+      "luck": 0,
+      "health": 1,
+      "money": 1000,
+      "illegal": 0
+    },
+    "cost": {
+      "love": 1,
       "education": 0,
       "luck": 0,
       "health": 0,
@@ -19,11 +57,11 @@
     }
   },
   {
-    "name":  "",
+    "name":  "NFT",
     "buy": {
       "love": 0,
       "education": 0,
-      "luck": 0,
+      "luck": 3,
       "health": 0,
       "money": 0,
       "illegal": 0
@@ -31,6 +69,44 @@
     "cost": {
       "love": 0,
       "education": 0,
+      "luck": 0,
+      "health": 1000,
+      "money": 0,
+      "illegal": 0
+    }
+  },
+  {
+    "name":  "Bourse",
+    "buy": {
+      "love": 0,
+      "education": 3,
+      "luck": 0,
+      "health": 3,
+      "money": 0,
+      "illegal": 0
+    },
+    "cost": {
+      "love": 0,
+      "education": 0,
+      "luck": 0,
+      "health": 0,
+      "money": 4000,
+      "illegal": 1
+    }
+  },
+  {
+    "name":  "Grandes Etudes",
+    "buy": {
+      "love": 1,
+      "education": 0,
+      "luck": 1,
+      "health": 1,
+      "money": 4000,
+      "illegal": 0
+    },
+    "cost": {
+      "love": 0,
+      "education": 4,
       "luck": 0,
       "health": 0,
       "money": 0,
@@ -38,32 +114,70 @@
     }
   },
   {
-    "name":  "",
+    "name":  "Se Marier",
+    "buy": {
+      "love": 6,
+      "education": 1,
+      "luck": 1,
+      "health": 2,
+      "money": 1000,
+      "illegal": 0
+    },
+    "cost": {
+      "love": 4,
+      "education": 0,
+      "luck": 2,
+      "health": 1,
+      "money": 0,
+      "illegal": 0
+    }
+  },
+  {
+    "name":  "Acheter des vetements",
+    "buy": {
+      "love": 0,
+      "education": 0,
+      "luck": 3,
+      "health": 0,
+      "money": 2000,
+      "illegal": 0
+    },
+    "cost": {
+      "love": 1,
+      "education": 0,
+      "luck": 0,
+      "health": 1,
+      "money": 0,
+      "illegal": 0
+    }
+  },
+  {
+    "name":  "Redbull",
     "buy": {
       "love": 0,
       "education": 0,
       "luck": 0,
-      "health": 0,
-      "money": 0,
+      "health": 3,
+      "money": 1000,
       "illegal": 0
     },
     "cost": {
       "love": 0,
       "education": 0,
-      "luck": 0,
+      "luck": 5,
       "health": 0,
       "money": 0,
       "illegal": 0
     }
   },
   {
-    "name":  "",
+    "name":  "Adopter un gorille",
     "buy": {
       "love": 0,
       "education": 0,
-      "luck": 0,
+      "luck": 2,
       "health": 0,
-      "money": 0,
+      "money": 10000,
       "illegal": 0
     },
     "cost": {
@@ -72,138 +186,24 @@
       "luck": 0,
       "health": 0,
       "money": 0,
-      "illegal": 0
+      "illegal": 3
     }
   },
   {
-    "name":  "",
+    "name":  "Rester Ami avec ses potes d'enfance",
     "buy": {
-      "love": 0,
+      "love": 2,
       "education": 0,
-      "luck": 0,
+      "luck": 1,
       "health": 0,
       "money": 0,
       "illegal": 0
     },
     "cost": {
-      "love": 0,
+      "love": 3,
       "education": 0,
       "luck": 0,
-      "health": 0,
-      "money": 0,
-      "illegal": 0
-    }
-  },
-  {
-    "name":  "",
-    "buy": {
-      "love": 0,
-      "education": 0,
-      "luck": 0,
-      "health": 0,
-      "money": 0,
-      "illegal": 0
-    },
-    "cost": {
-      "love": 0,
-      "education": 0,
-      "luck": 0,
-      "health": 0,
-      "money": 0,
-      "illegal": 0
-    }
-  },
-  {
-    "name":  "",
-    "buy": {
-      "love": 0,
-      "education": 0,
-      "luck": 0,
-      "health": 0,
-      "money": 0,
-      "illegal": 0
-    },
-    "cost": {
-      "love": 0,
-      "education": 0,
-      "luck": 0,
-      "health": 0,
-      "money": 0,
-      "illegal": 0
-    }
-  },
-  {
-    "name":  "",
-    "buy": {
-      "love": 0,
-      "education": 0,
-      "luck": 0,
-      "health": 0,
-      "money": 0,
-      "illegal": 0
-    },
-    "cost": {
-      "love": 0,
-      "education": 0,
-      "luck": 0,
-      "health": 0,
-      "money": 0,
-      "illegal": 0
-    }
-  },
-  {
-    "name":  "",
-    "buy": {
-      "love": 0,
-      "education": 0,
-      "luck": 0,
-      "health": 0,
-      "money": 0,
-      "illegal": 0
-    },
-    "cost": {
-      "love": 0,
-      "education": 0,
-      "luck": 0,
-      "health": 0,
-      "money": 0,
-      "illegal": 0
-    }
-  },
-  {
-    "name":  "",
-    "buy": {
-      "love": 0,
-      "education": 0,
-      "luck": 0,
-      "health": 0,
-      "money": 0,
-      "illegal": 0
-    },
-    "cost": {
-      "love": 0,
-      "education": 0,
-      "luck": 0,
-      "health": 0,
-      "money": 0,
-      "illegal": 0
-    }
-  },
-  {
-    "name":  "",
-    "buy": {
-      "love": 0,
-      "education": 0,
-      "luck": 0,
-      "health": 0,
-      "money": 0,
-      "illegal": 0
-    },
-    "cost": {
-      "love": 0,
-      "education": 0,
-      "luck": 0,
-      "health": 0,
+      "health": 1,
       "money": 0,
       "illegal": 0
     }

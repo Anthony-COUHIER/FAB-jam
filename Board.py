@@ -9,6 +9,6 @@ class Board:
         uid = 0
         properties = json.load('./properties.json')
         for p in properties:
-            asset = Property(p.buy, p.cost, uid, p.mystery)
+            asset = Property(p.buy, p.cost, uid, p.name, p.mystery)
             self.tiles.append(asset)
             uid += 1

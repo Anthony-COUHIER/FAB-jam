@@ -17,7 +17,6 @@ class Property:
         self.name = name
         self.mystery = mystery
 
-
     def go_on(self) -> bool:
         return not self.buyed
 
