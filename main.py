@@ -4,6 +4,8 @@ from random import randrange
 import sys
 import pygame
 
+import Game
+
 music = 'Sounds/bgm.mp3'
 dice_sound = 'Sounds/DiceSource.mp3'
 redbullcan_sound = 'Sounds/redbullcan_sound.mp3'
@@ -13,6 +15,8 @@ width, height = (200, 300)
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 GRAY = (30, 30, 30)
+
+my_game = Game
 
 
 def main():
@@ -79,9 +83,9 @@ def main():
         # text_surf = FONT.render(str(number ), True, BLACK)
         # text_rect = text_surf.get_rect(center=(width/2, 30))
         # screen.blit(text_surf, text_rect)
-        screen.blit(die[number - 1], (400, 400))
         pygame.display.update()
         parallaxe(screen, background, background_pos_x, background_pos_y)
+        parallaxe(screen, die[number - 1], 400, 400)
         pygame.display.flip()
 
 
