@@ -112,6 +112,7 @@ def main():
 
         for i in range(len(texturing)):
             parallaxe(screen, texturing[i], my_game.board.tiles[i].x, my_game.board.tiles[i].y)
+
         parallaxe(screen, die[number - 1], 400, 400)
         parallaxe(screen, player[0], 400, 100)
 
