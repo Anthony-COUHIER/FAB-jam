@@ -150,9 +150,9 @@ def main():
             x = 50
             y = 20
             if (i == 1 or i == 3):
-                x = 1800 - 300
+                x = size[0] - 300
             if (i == 2 or i == 3):
-                y = 900 - 80
+                y = size[1] - 80
             parallaxe(screen, profiles[i], profiles_positions[i][0], profiles_positions[i][1])
             draw_text(str(my_game.players[i].skills.love), x, y, screen, FONT)
             draw_text(str(my_game.players[i].skills.luck), x + 120, y, screen, FONT)
