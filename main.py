@@ -64,6 +64,10 @@ def main():
                 if background_pos_x < 0:
                     background_pos_x += 192
 
+            # Test sounds
+            if event.key == pygame.K_ESCAPE:
+                pygame.mixer.Sound.play(dice_roll_s)
+
                         # This block is executed once for each MOUSEBUTTONDOWN event.
         elif event.type == pygame.MOUSEBUTTONDOWN:
             # 1 is the left mouse button, 2 is middle, 3 is right.
