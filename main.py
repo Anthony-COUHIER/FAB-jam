@@ -38,7 +38,7 @@ def main():
     FONT = pygame.font.Font("resources/FreeSansBold.ttf", 50)
     clock = pygame.time.Clock()
 
-    size = 1920, 1080
+    size = 1800, 1080
 
     screen = pygame.display.set_mode(size)
 
