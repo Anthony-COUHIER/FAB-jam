@@ -506,7 +506,7 @@
   {
     "name": "",
     "texture": {
-      "path": "grass",
+      "path": "corner1",
       "x": 390,
       "y": -100
     },
@@ -746,7 +746,7 @@
   {
     "name": "",
     "texture": {
-      "path": "grass",
+      "path": "corner1",
       "x": 280,
       "y": -50
     },

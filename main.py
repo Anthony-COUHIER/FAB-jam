@@ -64,6 +64,8 @@ def main():
     for i in my_game.board.tiles:
         if i.path == "grass":
             texturing.append(pygame.image.load('resources/Tiles/grass_center_E.png'))
+        if i.path == "corner1":
+            texturing.append(pygame.image.load('resources/Tiles/grass_pathCorner_N.png'))
 
     while 1:
         for event in pygame.event.get():
