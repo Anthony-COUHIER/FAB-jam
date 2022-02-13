@@ -97,13 +97,16 @@ def main():
         # text_rect = text_surf.get_rect(center=(width/2, 30))
         # screen.blit(text_surf, text_rect)
         pygame.display.update()
+
         parallaxe(screen, background, background_pos_x, background_pos_y)
 
         for i in range(len(texturing)):
             parallaxe(screen, texturing[i], my_game.board.tiles[i].x, my_game.board.tiles[i].y)
         parallaxe(screen, die[number - 1], 400, 400)
-        pygame.display.flip()
         parallaxe(screen, player[0], 400, 100)
+
+        pygame.display.flip()
+
 
 def parallaxe(window, image, position_x, bg_position_y):
     window.blit(image, (position_x, bg_position_y))
