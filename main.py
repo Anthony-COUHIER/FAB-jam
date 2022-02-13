@@ -70,7 +70,7 @@ def main():
                 if background_pos_x < 0:
                     background_pos_x += 192
 
-        if event.type == pygame.MOUSEBUTTONDOWN:
+        if (event.type == pygame.MOUSEBUTTONDOWN) or (event.type == pygame.MOUSEBUTTONUP):
             if event.button == 1:
                 if button.collidepoint(event.pos):
                     if not pressing:
