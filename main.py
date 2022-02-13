@@ -4,6 +4,11 @@ from random import randrange
 import sys
 import pygame
 
+music = 'Sounds/bgm.mp3'
+dice_sound = 'Sounds/DiceSource.mp3'
+redbullcan_sound = 'Sounds/redbullcan_sound.mp3'
+sucess_sound = 'Sounds/sucess_sound.mp3'
+
 width, height = (200,300)
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
@@ -12,6 +17,16 @@ GRAY = (30, 30, 30)
 def main():
     global event
     pygame.init()
+
+    pygame.mixer.init()
+
+    dice_roll_s = pygame.mixer.Sound(dice_sound)
+    open_can_s = pygame.mixer.Sound(redbullcan_sound)
+    sucess_s = pygame.mixer.Sound(sucess_sound)
+
+    pygame.mixer.music.load(music)
+    pygame.mixer.music.play(-1)
+
     FONT = pygame.font.Font("resources/FreeSansBold.ttf", 50)
     clock = pygame.time.Clock()
 
