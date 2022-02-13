@@ -26,10 +26,10 @@ def main():
 
     my_game = Game()
 
-    my_game.create_players(4, ["resources/PNG/Pieces (Blue)/pieceBlue_single03.png",
+    my_game.create_players(4, ["resources/PNG/Pieces (Blue)/pieceBlue_single01.png",
                                "resources/PNG/Pieces (Red)/pieceRed_single03.png",
-                               "resources/PNG/Pieces (Yellow)/pieceYellow_single03.png",
-                               "resources/PNG/Pieces (Green)/pieceGreen_single03.png"])
+                               "resources/PNG/Pieces (Yellow)/pieceYellow_single02.png",
+                               "resources/PNG/Pieces (Green)/pieceGreen_single02.png"])
 
     dice_roll_s = pygame.mixer.Sound(dice_sound)
     # open_can_s = pygame.mixer.Sound(redbullcan_sound)
