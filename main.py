@@ -1,12 +1,18 @@
 #!/usr/bin/env python3.9
 
+from random import randrange
 import sys
 import pygame
 
+width, height = (200,300)
+WHITE = (255, 255, 255)
+BLACK = (0, 0, 0)
+GRAY = (30, 30, 30)
 
 def main():
     global event
     pygame.init()
+    FONT = pygame.font.Font("resources/FreeSansBold.ttf", 50)
     clock = pygame.time.Clock()
 
     size = 1920, 1080
@@ -14,9 +20,21 @@ def main():
     screen = pygame.display.set_mode(size)
 
     background = pygame.image.load('resources/background.png')
+    die =   [
+            pygame.image.load('resources/PNG/Dice/dieWhite1.png'),
+            pygame.image.load('resources/PNG/Dice/dieWhite2.png'),
+            pygame.image.load('resources/PNG/Dice/dieWhite3.png'),
+            pygame.image.load('resources/PNG/Dice/dieWhite4.png'),
+            pygame.image.load('resources/PNG/Dice/dieWhite5.png'),
+            pygame.image.load('resources/PNG/Dice/dieWhite6.png')
+            ]
 
     background_pos_x = 0
     background_pos_y = 0
+
+    pressing = False
+    button = pygame.Rect(400, 400, 64, 64)
+    number = randrange(1, 7)
 
     pygame.display.set_caption('FAB''s the game')
 
@@ -30,6 +48,24 @@ def main():
             if event.key == pygame.K_LEFT:
                 if background_pos_x < 0:
                     background_pos_x += 192
+                        # This block is executed once for each MOUSEBUTTONDOWN event.
+        elif event.type == pygame.MOUSEBUTTONDOWN:
+            # 1 is the left mouse button, 2 is middle, 3 is right.
+            if event.button == 1:
+                # `event.pos` is the mouse position.
+                if button.collidepoint(event.pos):
+                    # Increment the number.
+                    if pressing == False:
+                        number = randrange(1, 7)
+                        pressing = True
+        else:
+            pressing = False
+        # pygame.draw.rect(screen, GRAY, button)
+        # text_surf = FONT.render(str(number ), True, BLACK)
+        # text_rect = text_surf.get_rect(center=(width/2, 30))
+        # screen.blit(text_surf, text_rect)
+        screen.blit(die[number - 1], (400, 400))
+        pygame.display.update()
         parallaxe(screen, background, background_pos_x, background_pos_y)
         pygame.display.flip()
 
