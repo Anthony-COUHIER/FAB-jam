@@ -71,6 +71,16 @@ def main():
             texturing.append(pygame.image.load('resources/Tiles/grass_center_E.png'))
         if i.path == "corner1":
             texturing.append(pygame.image.load('resources/Tiles/grass_pathCorner_N.png'))
+        if i.path == "corner3":
+            texturing.append(pygame.image.load('resources/Tiles/grass_pathCorner_W.png'))
+        if i.path == "corner4":
+            texturing.append(pygame.image.load('resources/Tiles/grass_pathCorner_S.png'))
+        if i.path == "corner2":
+            texturing.append(pygame.image.load('resources/Tiles/grass_pathCorner_E.png'))
+        if i.path == "line1":
+            texturing.append(pygame.image.load('resources/Tiles/grass_path_E.png'))
+        if i.path == "line2":
+            texturing.append(pygame.image.load('resources/Tiles/grass_path_N.png'))
 
     while 1:
         for event in pygame.event.get():
