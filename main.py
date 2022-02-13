@@ -32,6 +32,7 @@ def main():
                                "resources/PNG/Pieces (Red)/pieceRed_single03.png",
                                "resources/PNG/Pieces (Yellow)/pieceYellow_single02.png",
                                "resources/PNG/Pieces (Green)/pieceGreen_single02.png"])
+    gorilla = pygame.image.load('resources/gorilla.png')
 
     dice_roll_s = pygame.mixer.Sound(dice_sound)
 
@@ -106,6 +107,7 @@ def main():
         pygame.display.update()
 
         parallaxe(screen, background, 0, 0)
+        parallaxe(screen, gorilla, size[0] / 2 - 305, size[1] / 2 + 100)
 
         pygame.display.flip()
     while 1:
