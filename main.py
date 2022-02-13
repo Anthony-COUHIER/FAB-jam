@@ -35,9 +35,10 @@ def main():
 
     dice_roll_s = pygame.mixer.Sound(dice_sound)
 
+    size = 1800, 1080
     profiles = [pygame.image.load('resources/profil_blue.png'), pygame.image.load('resources/profil_red.png'),
                 pygame.image.load('resources/profil_green.png'), pygame.image.load('resources/profil_yellow.png')]
-    profiles_positions = [[0, 0], [1800 - 450, 0], [0, 1080 - 100], [1800 - 450, 1080 - 100]]
+    profiles_positions = [[0, 0], [size[0] - 450, 0], [0, size[1] - 100], [size[0] - 450, size[1] - 100]]
 
     # sucess_s = pygame.mixer.Sound(sucess_sound)
 
@@ -45,10 +46,8 @@ def main():
     pygame.mixer.music.set_volume(0.1)
     pygame.mixer.music.play(-1)
 
-    FONT = pygame.font.Font("resources/FreeSansBold.ttf", 50)
+    FONT = pygame.font.Font("resources/FreeSansBold.ttf", 18)
     clock = pygame.time.Clock()
-
-    size = 1800, 1080
 
     screen = pygame.display.set_mode(size, pygame.RESIZABLE)
 
@@ -148,13 +147,25 @@ def main():
                       my_game.players[i].y + y_offset + 5 * (i - 2))
 
         for i in range(4):
-
-            #TODO Alex ajoute ici les draw des texts pour les profils
-
+            x = 50
+            y = 20
+            if (i == 1 or i == 3):
+                x = 1800 - 300
+            if (i == 2 or i == 3):
+                y = 900 - 80
             parallaxe(screen, profiles[i], profiles_positions[i][0], profiles_positions[i][1])
+            draw_text(str(my_game.players[i].skills.love), x, y, screen, FONT)
+            draw_text(str(my_game.players[i].skills.luck), x + 120, y, screen, FONT)
+            draw_text(str(my_game.players[i].skills.money), x + 240, y, screen, FONT)
+            draw_text(str(my_game.players[i].skills.education), x, y + 40, screen, FONT)
+            draw_text(str(my_game.players[i].skills.health), x + 120, y + 40, screen, FONT)
+            draw_text(str(my_game.players[i].skills.illegal), x + 240, y + 40, screen, FONT)
 
         pygame.display.flip()
 
+def draw_text(string, x, y, screen, FONT):
+    skill_text = FONT.render(string, True, BLACK)
+    parallaxe(screen, skill_text, x, y)
 
 def parallaxe(window, image, position_x, bg_position_y):
     window.blit(image, (position_x, bg_position_y))
