@@ -18,9 +18,11 @@ GRAY = (30, 30, 30)
 texturing = []
 
 
+
 def main():
     global event
     pygame.init()
+    open_menu = 1
 
     pygame.mixer.init()
 
@@ -37,7 +39,6 @@ def main():
                 pygame.image.load('resources/profil_green.png'), pygame.image.load('resources/profil_yellow.png')]
     profiles_positions = [[0, 0], [1800 - 450, 0], [0, 1080 - 100], [1800 - 450, 1080 - 100]]
 
-    # open_can_s = pygame.mixer.Sound(redbullcan_sound)
     # sucess_s = pygame.mixer.Sound(sucess_sound)
 
     pygame.mixer.music.load(music)
@@ -51,7 +52,7 @@ def main():
 
     screen = pygame.display.set_mode(size, pygame.RESIZABLE)
 
-    background = pygame.image.load('resources/background.png')
+    background = pygame.image.load('resources/back.png')
     die = [
         pygame.image.load('resources/PNG/Dice/dieWhite1.png'),
         pygame.image.load('resources/PNG/Dice/dieWhite2.png'),
@@ -68,6 +69,7 @@ def main():
 
     pressing = False
     button = pygame.Rect((1800 / 2) - 80, (1080 / 2) - 40, 64, 64)
+    button_open = pygame.Rect(600, 540, 600, 100)
     number = 1
 
     pygame.display.set_caption('FAB''s the game')
@@ -88,6 +90,25 @@ def main():
         if i.path == "line2":
             texturing.append(pygame.image.load('resources/Tiles/grass_path_N.png'))
 
+    while open_menu == 1:
+
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT: sys.exit()
+
+        if (event.type == pygame.MOUSEBUTTONDOWN) or (event.type == pygame.MOUSEBUTTONUP):
+            if event.button == 1:
+                if button_open.collidepoint(event.pos):
+                    if not pressing:
+                        open_menu = 0
+                        pressing = True
+        else:
+            pressing = False
+
+        pygame.display.update()
+
+        parallaxe(screen, background, 0, 0)
+
+        pygame.display.flip()
     while 1:
         for event in pygame.event.get():
             if event.type == pygame.QUIT: sys.exit()
