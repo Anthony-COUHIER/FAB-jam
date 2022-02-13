@@ -62,7 +62,6 @@ def main():
     pygame.display.set_caption('FAB''s the game')
 
     for i in my_game.board.tiles:
-        print(i)
         if i.path == "grass":
             texturing.append(pygame.image.load('resources/Tiles/grass_center_E.png'))
 
@@ -94,7 +93,6 @@ def main():
         parallaxe(screen, background, background_pos_x, background_pos_y)
 
         for i in range(len(texturing)):
-            print(i)
             parallaxe(screen, texturing[i], my_game.board.tiles[i].x, my_game.board.tiles[i].y)
         parallaxe(screen, die[number - 1], 400, 400)
         pygame.display.flip()

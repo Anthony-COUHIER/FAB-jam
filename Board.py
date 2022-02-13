@@ -10,7 +10,6 @@ class Board:
         uid = 0
         properties = json.load(open('./properties.json'))
         for p in properties:
-            print(p)
             mystery = False
             try:
                 mystery = p["mystery"]
