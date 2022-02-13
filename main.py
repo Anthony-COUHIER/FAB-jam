@@ -57,6 +57,15 @@ def main():
         pygame.image.load('resources/PNG/Pieces (Yellow)/pieceYellow_single03.png'),
         pygame.image.load('resources/PNG/Pieces (Green)/pieceGreen_single03.png'),
     ]
+    x_offset = 100
+    y_offset = 150
+    pos = [
+        [720, 50], [830, 100], [940, 150], [1050, 200], [1160, 250], [1270, 300], [1380, 350],
+        [1270, 400], [1160, 450], [1050, 500], [940, 550], [830, 600], [720, 650],
+        [610, 600], [500, 550], [390, 500], [280, 450], [170, 400], [60, 350],
+        [170, 300], [280, 250], [390, 200], [500, 150], [610, 100]
+    ]
+
     background_pos_x = 0
     background_pos_y = 0
 
@@ -114,7 +123,8 @@ def main():
             parallaxe(screen, texturing[i], my_game.board.tiles[i].x, my_game.board.tiles[i].y)
 
         parallaxe(screen, die[number - 1], 400, 400)
-        parallaxe(screen, player[0], 400, 100)
+        for p in pos:
+            parallaxe(screen, player[0], p[0] + x_offset, p[1] + y_offset)
 
         pygame.display.flip()
 
