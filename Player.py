@@ -37,12 +37,10 @@ class Player:
     def move(self, nb_case):
         if nb_case > 0:
             self.case += 1
-            sleep(0.05)
             self.case %= 24
             self.move(nb_case - 1)
 
     def can_buy(self, asset: Property) -> bool:
-        print(self.skills)
         return not (
                     self.skills.love < asset.buy.love and
                     self.skills.health < asset.buy.health and

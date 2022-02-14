@@ -28,9 +28,6 @@ class Property:
         self.y = y
         self.mystery = mystery
 
-        print(cost)
-        print(self.cost)
-
     def go_on(self) -> bool:
         return not self.buyed
 

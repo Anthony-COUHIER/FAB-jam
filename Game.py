@@ -20,35 +20,34 @@ class Game:
         self.players = [Player(paths[i]) for i in range(nb)]
 
     def get_tiles(self) -> Property:
-        self.player_pos_to_play %= len(self.board.tiles)
+        self.players[self.player_pos_to_play].case %= len(self.board.tiles)
         return self.board.tiles[self.players[self.player_pos_to_play]]
 
     def play(self, dice_val, screen, FONT):
         player = self.players[self.player_pos_to_play]
         player.move(dice_val)
-        case: Property = Board.tiles[player.case]
+        pos = player.pos[player.case]
+        case = None
+        for t in self.board.tiles:
+            if t.x == pos[0] and t.y == pos[1]:
+                case = t
 
         print(case.path)
         print(case.x)
         print(case.y)
+        print(player.case)
 
-        print("buy ", case.buy)
-        print("cost ", case.cost)
-        print("buyed ", case.buyed)
-        print("id ", case.id)
-        print("mystery ", case.mystery)
-        print("name ", case.name)
-        print("owner ", case.owner)
         if not case.buyed:
             if player.can_buy(case):
-                player.buy(case)
-                case.owner = player
-                # draw_text("Do you want to buy it ?, [y/n]", 0, 0, screen, FONT)
-                # for e in pygame.event.get():
-                #     if e.type == pygame.KEYDOWN:
-                #         if e.key == pygame.Y_KEY:
-                #         else:
-                #             pass
+                print("can but")
+                draw_text("Do you want to buy it ?, [y/n]", 0, 0, screen, FONT)
+                for e in pygame.event.get():
+                    if e.type == pygame.KEYDOWN:
+                        if e.key == pygame.Y_KEY:
+                            player.buy(case)
+                            case.owner = player
+                        else:
+                            pass
             else:
                 draw_text("You can't buy it...", 0, 0, screen, FONT)
         elif case.owner != player:

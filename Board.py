@@ -17,5 +17,7 @@ class Board:
                 mystery = False
             asset = Property(p["buy"], p["cost"], uid, p["name"], p["texture"]["path"], p["texture"]["x"],
                              p["texture"]["y"], mystery)
+            if p["name"] != "":
+                print(asset.path)
             self.tiles.append(asset)
             uid += 1
