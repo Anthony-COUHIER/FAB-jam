@@ -17,3 +17,15 @@ class Skills:
         self.health = health
         self.money = money
         self.illegal = illegal
+
+
+WHITE = (255, 255, 255)
+BLACK = (0, 0, 0)
+GRAY = (30, 30, 30)
+
+def draw_text(string, x, y, screen, FONT):
+    skill_text = FONT.render(string, True, BLACK)
+    parallaxe(screen, skill_text, x, y)
+
+def parallaxe(window, image, position_x, bg_position_y):
+    window.blit(image, (position_x, bg_position_y))

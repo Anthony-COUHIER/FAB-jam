@@ -1,3 +1,5 @@
+import inspect
+
 from common import Skills
 from Player import Player
 
@@ -15,9 +17,9 @@ class Property:
     x: int = 0
     y: int = 0
 
-    def __init__(self, cost: Skills, buy: Skills, id: int, name: str, path: str, x: int, y: int, mystery=False):
-        self.cost = cost
-        self.buy = buy
+    def __init__(self, cost: dict, buy: dict, id: int, name: str, path: str, x: int, y: int, mystery=False):
+        self.cost = Skills(cost["love"], cost["education"], cost["luck"], cost["health"], cost["money"], cost["illegal"])
+        self.buy = Skills(buy["love"], buy["education"], buy["luck"], buy["health"], buy["money"], buy["illegal"])
         self.buyed = False
         self.id = id
         self.name = name
@@ -25,6 +27,9 @@ class Property:
         self.x = x
         self.y = y
         self.mystery = mystery
+
+        print(cost)
+        print(self.cost)
 
     def go_on(self) -> bool:
         return not self.buyed

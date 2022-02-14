@@ -37,11 +37,12 @@ class Player:
     def move(self, nb_case):
         if nb_case > 0:
             self.case += 1
-            #sleep(1)
+            sleep(0.05)
             self.case %= 24
             self.move(nb_case - 1)
 
     def can_buy(self, asset: Property) -> bool:
+        print(self.skills)
         return not (
                     self.skills.love < asset.buy.love and
                     self.skills.health < asset.buy.health and
@@ -68,3 +69,15 @@ class Player:
         self.skills.education -= asset.cost.education
         self.skills.money -= asset.cost.money
         self.skills.luck -= asset.cost.luck
+        asset.owner.skills.love += asset.cost.love
+        asset.owner.skills.health += asset.cost.health
+        asset.owner.skills.illegal += asset.cost.illegal
+        asset.owner.skills.education += asset.cost.education
+        asset.owner.skills.money += asset.cost.money
+        asset.owner.skills.luck += asset.cost.luck
+
+
+    def __eq__(self, other):
+        if not other:
+            return False
+        return self.path == other.path

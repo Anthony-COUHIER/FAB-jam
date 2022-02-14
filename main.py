@@ -5,24 +5,22 @@ from Game import Game
 import sys
 import pygame
 
+from common import parallaxe, draw_text
+
 music = 'Sounds/bgm.mp3'
 dice_sound = 'Sounds/DiceSource.mp3'
 redbullcan_sound = 'Sounds/redbullcan_sound.mp3'
 sucess_sound = 'Sounds/sucess_sound.mp3'
 
 width, height = (200, 300)
-WHITE = (255, 255, 255)
-BLACK = (0, 0, 0)
-GRAY = (30, 30, 30)
 
 texturing = []
-
 
 
 def main():
     global event
     pygame.init()
-    open_menu = 1
+    open_menu = 0
 
     pygame.mixer.init()
 
@@ -93,16 +91,19 @@ def main():
     while open_menu == 1:
 
         for event in pygame.event.get():
-            if event.type == pygame.QUIT: sys.exit()
-
-        if (event.type == pygame.MOUSEBUTTONDOWN) or (event.type == pygame.MOUSEBUTTONUP):
-            if event.button == 1:
-                if button_open.collidepoint(event.pos):
-                    if not pressing:
-                        open_menu = 0
-                        pressing = True
-        else:
-            pressing = False
+            if event.type == pygame.QUIT:
+                sys.exit()
+            if (event.type == pygame.MOUSEBUTTONDOWN) or (event.type == pygame.MOUSEBUTTONUP):
+                if event.button == 1:
+                    if button_open.collidepoint(event.pos):
+                        if not pressing:
+                            open_menu = 0
+                            pressing = True
+            elif event.type == pygame.KEYDOWN and event.key == pygame.K_SPACE:
+                open_menu = 0
+                pressing = True
+            else:
+                pressing = False
 
         pygame.display.update()
 
@@ -112,23 +113,24 @@ def main():
         pygame.display.flip()
     while 1:
         for event in pygame.event.get():
-            if event.type == pygame.QUIT: sys.exit()
-        if event.type == pygame.KEYDOWN:
-            if event.key == pygame.K_RIGHT:
-                if background_pos_x > -1920:
-                    background_pos_x -= 192
-            if event.key == pygame.K_LEFT:
-                if background_pos_x < 0:
-                    background_pos_x += 192
+            if event.type == pygame.QUIT:
+                sys.exit()
+            if event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_RIGHT:
+                    if background_pos_x > -1920:
+                        background_pos_x -= 192
+                if event.key == pygame.K_LEFT:
+                    if background_pos_x < 0:
+                        background_pos_x += 192
 
-        if (event.type == pygame.MOUSEBUTTONDOWN) or (event.type == pygame.MOUSEBUTTONUP):
-            if event.button == 1:
-                if button.collidepoint(event.pos):
-                    if not pressing:
-                        number = randrange(1, 7)
-                        pygame.mixer.Sound.play(dice_roll_s)
-                        pressing = True
-                        my_game.play(number)
+            if (event.type == pygame.MOUSEBUTTONDOWN) or (event.type == pygame.MOUSEBUTTONUP):
+                if event.button == 1:
+                    if button.collidepoint(event.pos):
+                        if not pressing:
+                            number = randrange(1, 7)
+                            pygame.mixer.Sound.play(dice_roll_s)
+                            pressing = True
+                            my_game.play(number, screen, FONT)
         else:
             pressing = False
         # pygame.draw.rect(screen, GRAY, button)
@@ -164,13 +166,6 @@ def main():
             draw_text(str(my_game.players[i].skills.illegal), x + 240, y + 40, screen, FONT)
 
         pygame.display.flip()
-
-def draw_text(string, x, y, screen, FONT):
-    skill_text = FONT.render(string, True, BLACK)
-    parallaxe(screen, skill_text, x, y)
-
-def parallaxe(window, image, position_x, bg_position_y):
-    window.blit(image, (position_x, bg_position_y))
 
 
 if __name__ == '__main__':

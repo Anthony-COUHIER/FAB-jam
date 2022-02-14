@@ -1248,7 +1248,7 @@
     }
   },
   {
-    "name": "",
+    "name": "Aller à l'universite",
     "texture": {
       "path": "corner1",
       "x": 720,
@@ -1259,7 +1259,7 @@
       "education": 0,
       "luck": 0,
       "health": 0,
-      "money": 0,
+      "money": 3000,
       "illegal": 0
     },
     "cost": {
@@ -1440,7 +1440,7 @@
     }
   },
   {
-    "name": "",
+    "name": "Faire de l'alternance",
     "texture": {
       "path": "line1",
       "x": 610,
@@ -1448,7 +1448,7 @@
     },
     "buy": {
       "love": 0,
-      "education": 0,
+      "education": 1,
       "luck": 0,
       "health": 0,
       "money": 0,
@@ -1456,7 +1456,7 @@
     },
     "cost": {
       "love": 0,
-      "education": 0,
+      "education": 2,
       "luck": 0,
       "health": 0,
       "money": 0,
@@ -1464,7 +1464,7 @@
     }
   },
   {
-    "name": "",
+    "name": "Aller en boite",
     "texture": {
       "path": "line2",
       "x": 830,
@@ -1474,16 +1474,16 @@
       "love": 0,
       "education": 0,
       "luck": 0,
-      "health": 0,
-      "money": 0,
+      "health": 1,
+      "money": 1000,
       "illegal": 0
     },
     "cost": {
-      "love": 0,
-      "education": 0,
+      "love": 1,
+      "education": 1,
       "luck": 0,
       "health": 0,
-      "money": 0,
+      "money": 1000,
       "illegal": 0
     }
   },
@@ -1680,7 +1680,7 @@
     }
   },
   {
-    "name": "",
+    "name": "NFT",
     "texture": {
       "path": "line1",
       "x": 500,
@@ -1689,13 +1689,13 @@
     "buy": {
       "love": 0,
       "education": 0,
-      "luck": 0,
+      "luck": 3,
       "health": 0,
       "money": 0,
       "illegal": 0
     },
     "cost": {
-      "love": 0,
+      "love": 1,
       "education": 0,
       "luck": 0,
       "health": 0,
@@ -1728,7 +1728,7 @@
     }
   },
   {
-    "name": "",
+    "name": "Bourse",
     "texture": {
       "path": "line2",
       "x": 940,
@@ -1736,9 +1736,9 @@
     },
     "buy": {
       "love": 0,
-      "education": 0,
+      "education": 3,
       "luck": 0,
-      "health": 0,
+      "health": 3,
       "money": 0,
       "illegal": 0
     },
@@ -1746,7 +1746,7 @@
       "love": 0,
       "education": 0,
       "luck": 0,
-      "health": 0,
+      "health": 1000,
       "money": 0,
       "illegal": 0
     }
@@ -1872,18 +1872,18 @@
     }
   },
   {
-    "name": "",
+    "name": "Grandes Etudes",
     "texture": {
       "path": "line1",
       "x": 390,
       "y": 200
     },
     "buy": {
-      "love": 0,
+      "love": 1,
       "education": 0,
-      "luck": 0,
-      "health": 0,
-      "money": 0,
+      "luck": 1,
+      "health": 1,
+      "money": 4000,
       "illegal": 0
     },
     "cost": {
@@ -1891,8 +1891,8 @@
       "education": 0,
       "luck": 0,
       "health": 0,
-      "money": 0,
-      "illegal": 0
+      "money": 4000,
+      "illegal": 1
     }
   },
   {
@@ -1944,23 +1944,23 @@
     }
   },
   {
-    "name": "",
+    "name": "Se Marier",
     "texture": {
       "path": "line2",
       "x": 1050,
       "y": 200
     },
     "buy": {
-      "love": 0,
-      "education": 0,
-      "luck": 0,
-      "health": 0,
-      "money": 0,
+      "love": 6,
+      "education": 1,
+      "luck": 1,
+      "health": 2,
+      "money": 1000,
       "illegal": 0
     },
     "cost": {
       "love": 0,
-      "education": 0,
+      "education": 4,
       "luck": 0,
       "health": 0,
       "money": 0,
@@ -2112,7 +2112,7 @@
     }
   },
   {
-    "name": "",
+    "name": "Acheter des vetements",
     "texture": {
       "path": "line1",
       "x": 280,
@@ -2121,16 +2121,16 @@
     "buy": {
       "love": 0,
       "education": 0,
-      "luck": 0,
+      "luck": 3,
       "health": 0,
-      "money": 0,
+      "money": 2000,
       "illegal": 0
     },
     "cost": {
-      "love": 0,
+      "love": 4,
       "education": 0,
-      "luck": 0,
-      "health": 0,
+      "luck": 2,
+      "health": 1,
       "money": 0,
       "illegal": 0
     }
@@ -2208,7 +2208,7 @@
     }
   },
   {
-    "name": "",
+    "name": "Redbull",
     "texture": {
       "path": "line2",
       "x": 1160,
@@ -2218,15 +2218,15 @@
       "love": 0,
       "education": 0,
       "luck": 0,
-      "health": 0,
-      "money": 0,
+      "health": 3,
+      "money": 1000,
       "illegal": 0
     },
     "cost": {
-      "love": 0,
+      "love": 1,
       "education": 0,
       "luck": 0,
-      "health": 0,
+      "health": 1,
       "money": 0,
       "illegal": 0
     }
@@ -2304,7 +2304,7 @@
     }
   },
   {
-    "name": "",
+    "name": "Adopter un gorille",
     "texture": {
       "path": "line1",
       "x": 170,
@@ -2313,15 +2313,15 @@
     "buy": {
       "love": 0,
       "education": 0,
-      "luck": 0,
+      "luck": 2,
       "health": 0,
-      "money": 0,
+      "money": 10000,
       "illegal": 0
     },
     "cost": {
       "love": 0,
       "education": 0,
-      "luck": 0,
+      "luck": 5,
       "health": 0,
       "money": 0,
       "illegal": 0
@@ -2424,16 +2424,16 @@
     }
   },
   {
-    "name": "",
+    "name": "Rester Ami avec ses potes d'enfance",
     "texture": {
       "path": "line2",
       "x": 1270,
       "y": 300
     },
     "buy": {
-      "love": 0,
+      "love": 2,
       "education": 0,
-      "luck": 0,
+      "luck": 1,
       "health": 0,
       "money": 0,
       "illegal": 0
@@ -2444,7 +2444,7 @@
       "luck": 0,
       "health": 0,
       "money": 0,
-      "illegal": 0
+      "illegal": 3
     }
   },
   {
@@ -2760,7 +2760,7 @@
     }
   },
   {
-    "name": "",
+    "name": "Manger sainement",
     "texture": {
       "path": "corner3",
       "x": 60,
@@ -2771,14 +2771,14 @@
       "education": 0,
       "luck": 0,
       "health": 0,
-      "money": 0,
+      "money": 3000,
       "illegal": 0
     },
     "cost": {
-      "love": 0,
+      "love": 3,
       "education": 0,
       "luck": 0,
-      "health": 0,
+      "health": 1,
       "money": 0,
       "illegal": 0
     }
@@ -2904,7 +2904,7 @@
     }
   },
   {
-    "name": "",
+    "name": "Manger mal",
     "texture": {
       "path": "corner2",
       "x": 1380,
@@ -2914,7 +2914,7 @@
       "love": 0,
       "education": 0,
       "luck": 0,
-      "health": 0,
+      "health": 3,
       "money": 0,
       "illegal": 0
     },
@@ -2922,7 +2922,7 @@
       "love": 0,
       "education": 0,
       "luck": 0,
-      "health": 0,
+      "health": 2,
       "money": 0,
       "illegal": 0
     }
@@ -2976,7 +2976,7 @@
     }
   },
   {
-    "name": "",
+    "name": "Adopter un chat",
     "texture": {
       "path": "line2",
       "x": 170,
@@ -2986,14 +2986,14 @@
       "love": 0,
       "education": 0,
       "luck": 0,
-      "health": 0,
-      "money": 0,
+      "health": 3,
+      "money": 3000,
       "illegal": 0
     },
     "cost": {
       "love": 0,
       "education": 0,
-      "luck": 0,
+      "luck": 1,
       "health": 0,
       "money": 0,
       "illegal": 0
@@ -3096,22 +3096,22 @@
     }
   },
   {
-    "name": "",
+    "name": "Devenir Banquier",
     "texture": {
       "path": "line1",
       "x": 1270,
       "y": 400
     },
     "buy": {
-      "love": 0,
-      "education": 0,
-      "luck": 0,
-      "health": 0,
+      "love": 5,
+      "education": 5,
+      "luck": 1,
+      "health": 2,
       "money": 0,
       "illegal": 0
     },
     "cost": {
-      "love": 0,
+      "love": 1,
       "education": 0,
       "luck": 0,
       "health": 0,
@@ -3240,7 +3240,7 @@
     }
   },
   {
-    "name": "",
+    "name": "Devenir Investisseur",
     "texture": {
       "path": "line2",
       "x": 280,
@@ -3248,10 +3248,10 @@
     },
     "buy": {
       "love": 0,
-      "education": 0,
-      "luck": 0,
+      "education": 5,
+      "luck": 10,
       "health": 0,
-      "money": 0,
+      "money": 30000,
       "illegal": 0
     },
     "cost": {
@@ -3259,7 +3259,7 @@
       "education": 0,
       "luck": 0,
       "health": 0,
-      "money": 0,
+      "money": 10000,
       "illegal": 0
     }
   },
@@ -3336,17 +3336,17 @@
     }
   },
   {
-    "name": "",
+    "name": "Devenir Star du X",
     "texture": {
       "path": "line1",
       "x": 1160,
       "y": 450
     },
     "buy": {
-      "love": 0,
+      "love": 10,
       "education": 0,
-      "luck": 0,
-      "health": 0,
+      "luck": 5,
+      "health": 10,
       "money": 0,
       "illegal": 0
     },
@@ -3355,7 +3355,7 @@
       "education": 0,
       "luck": 0,
       "health": 0,
-      "money": 0,
+      "money": 20000,
       "illegal": 0
     }
   },
@@ -3456,26 +3456,26 @@
     }
   },
   {
-    "name": "",
+    "name": "Devenir Ingénieur",
     "texture": {
       "path": "line2",
       "x": 390,
       "y": 500
     },
     "buy": {
-      "love": 0,
-      "education": 0,
+      "love": 1,
+      "education": 10,
       "luck": 0,
-      "health": 0,
+      "health": 1,
       "money": 0,
       "illegal": 0
     },
     "cost": {
-      "love": 0,
+      "love": 1,
       "education": 0,
       "luck": 0,
       "health": 0,
-      "money": 0,
+      "money": 50000,
       "illegal": 0
     }
   },
@@ -3576,7 +3576,7 @@
     }
   },
   {
-    "name": "",
+    "name": "Rejoindre un club de lecture",
     "texture": {
       "path": "grass",
       "x": 1490,
@@ -3584,7 +3584,7 @@
     },
     "buy": {
       "love": 0,
-      "education": 0,
+      "education": 2,
       "luck": 0,
       "health": 0,
       "money": 0,
@@ -3594,8 +3594,8 @@
       "love": 0,
       "education": 0,
       "luck": 0,
-      "health": 0,
-      "money": 0,
+      "health": 1,
+      "money": 50000,
       "illegal": 0
     }
   },
@@ -3720,7 +3720,7 @@
     }
   },
   {
-    "name": "",
+    "name": "Rejoindre un club de business",
     "texture": {
       "path": "line2",
       "x": 500,
@@ -3731,12 +3731,12 @@
       "education": 0,
       "luck": 0,
       "health": 0,
-      "money": 0,
+      "money": 3000,
       "illegal": 0
     },
     "cost": {
       "love": 0,
-      "education": 0,
+      "education": 1,
       "luck": 0,
       "health": 0,
       "money": 0,
@@ -3768,7 +3768,7 @@
     }
   },
   {
-    "name": "",
+    "name": "Rejoindre un club de fitness",
     "texture": {
       "path": "line1",
       "x": 940,
@@ -3778,15 +3778,15 @@
       "love": 0,
       "education": 0,
       "luck": 0,
-      "health": 0,
-      "money": 0,
+      "health": 2,
+      "money": 1000,
       "illegal": 0
     },
     "cost": {
-      "love": 0,
+      "love": 1,
       "education": 0,
       "luck": 0,
-      "health": 0,
+      "health": 2,
       "money": 0,
       "illegal": 0
     }
@@ -3936,12 +3936,13 @@
     }
   },
   {
-    "name": "",
+    "name": "Mystery",
     "texture": {
       "path": "line2",
       "x": 610,
       "y": 600
     },
+    "mystery": true,
     "buy": {
       "love": 0,
       "education": 0,
@@ -3960,12 +3961,13 @@
     }
   },
   {
-    "name": "",
+    "name": "Mystery",
     "texture": {
       "path": "line1",
       "x": 830,
       "y": 600
     },
+    "mystery": true,
     "buy": {
       "love": 0,
       "education": 0,
@@ -4200,12 +4202,13 @@
     }
   },
   {
-    "name": "",
+    "name": "Mystery",
     "texture": {
       "path": "corner4",
       "x": 720,
       "y": 650
     },
+    "mystery": true,
     "buy": {
       "love": 0,
       "education": 0,
