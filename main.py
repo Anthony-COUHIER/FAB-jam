@@ -8,6 +8,7 @@ import pygame
 from common import parallaxe, draw_text
 
 music = 'Sounds/bgm.mp3'
+game_music = 'Sounds/game_bgm.mp3'
 dice_sound = 'Sounds/DiceSource.mp3'
 redbullcan_sound = 'Sounds/redbullcan_sound.mp3'
 sucess_sound = 'Sounds/sucess_sound.mp3'
@@ -20,7 +21,7 @@ texturing = []
 def main():
     global event
     pygame.init()
-    open_menu = 0
+    open_menu = 1
 
     pygame.mixer.init()
 
@@ -42,7 +43,7 @@ def main():
     # sucess_s = pygame.mixer.Sound(sucess_sound)
 
     pygame.mixer.music.load(music)
-    pygame.mixer.music.set_volume(0.1)
+    pygame.mixer.music.set_volume(0.5)
     pygame.mixer.music.play(-1)
 
     FONT = pygame.font.Font("resources/FreeSansBold.ttf", 18)
@@ -99,9 +100,15 @@ def main():
                         if not pressing:
                             open_menu = 0
                             pressing = True
+                            pygame.mixer.music.stop()
+                            pygame.mixer.music.load(game_music)
+                            pygame.mixer.music.play(-1)
             elif event.type == pygame.KEYDOWN and event.key == pygame.K_SPACE:
                 open_menu = 0
                 pressing = True
+                pygame.mixer.music.stop()
+                pygame.mixer.music.load(game_music)
+                pygame.mixer.music.play(-1)
             else:
                 pressing = False
 
@@ -123,7 +130,7 @@ def main():
                     if background_pos_x < 0:
                         background_pos_x += 192
 
-            if (event.type == pygame.MOUSEBUTTONDOWN) or (event.type == pygame.MOUSEBUTTONUP):
+            if (event.type == pygame.MOUSEBUTTONDOWN):
                 if event.button == 1:
                     if button.collidepoint(event.pos):
                         if not pressing:
